@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contact Iscalify – Book a free 30-minute strategy call with our performance marketing team. Meta Ads, Google Ads, SEO & Web Development agency in Mohali, Punjab.">
+    <title>Contact – Iscalify | Book Free Strategy Call | Mohali, Punjab</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Contact-specific overrides */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 80vh;
+        }
+
+        .contact-left {
+            background: var(--surface);
+            padding: 80px 60px;
+            border-right: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .contact-right {
+            background: var(--surface-2);
+            padding: 80px 60px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .contact-info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-icon {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .info-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: rgba(255, 255, 255, 0.35);
+            margin-bottom: 6px;
+        }
+
+        .info-value {
+            font-size: 0.95rem;
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        .info-value a {
+            color: var(--white);
+            transition: color 0.2s;
+        }
+
+        .info-value a:hover {
+            color: var(--green);
+        }
+
+        .perks-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            background: rgba(255, 255, 255, 0.08);
+            margin-top: 48px;
+        }
+
+        .perk-item {
+            background: var(--surface-2);
+            padding: 24px 20px;
+        }
+
+        .perk-icon {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .perk-text {
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--grey-400);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--white);
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .faq-answer {
+            font-size: 0.9rem;
+            color: var(--grey-400);
+            line-height: 1.7;
+            padding-bottom: 20px;
+            display: none;
+        }
+
+        .faq-answer.open {
+            display: block;
+        }
+
+        .faq-icon {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            transition: transform 0.3s;
+        }
+
+        .faq-icon.open {
+            transform: rotate(45deg);
+        }
+
+        @media (max-width: 900px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-left {
+                padding: 48px 28px;
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .contact-right {
+                padding: 48px 28px;
+            }
+
+            .perks-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contact-left {
+                padding: 36px 20px;
+            }
+
+            .contact-right {
+                padding: 36px 20px;
+            }
+
+            .perks-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr !important;
+                gap: 0 !important;
+            }
+
+            .faq-question {
+                font-size: 0.95rem !important;
+                padding: 16px 0 !important;
+            }
+
+            .faq-answer {
+                font-size: 0.88rem !important;
+            }
+
+            button[type="submit"] {
+                margin-bottom: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Iscalify</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="case-studies.html" class="nav-link">Results</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-contact">Get In Touch</a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="case-studies.html" class="mobile-link">Results</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="contact.html" class="btn-contact" style="margin-top:16px;display:inline-block;text-align:center">Get In
+      Touch</a>
+  </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero-white">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-overline accent" style="margin-bottom:28px">Free 30-Minute Strategy Call</div>
+                <h1 class="bold-heading" style="color:var(--white);font-size:clamp(4rem,9vw,10rem)">Let's
+                    Grow<br>Your<br><span class="accent">Business.</span></h1>
+                <p
+                    style="font-size:1.15rem;color:rgba(255,255,255,0.55);max-width:560px;line-height:1.75;margin-top:32px">
+                    Fill in the form or book directly via Calendly. No sales pitch — just a genuine conversation about
+                    how we can help you scale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT LAYOUT -->
+    <section class="contact-layout">
+        <!-- LEFT: Contact info -->
+        <div class="contact-left">
+            <div class="reveal">
+                <div class="section-overline accent" style="margin-bottom:32px">Talk To Us</div>
+                <div class="contact-info-item">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <div class="info-label">Phone</div>
+                        <div class="info-value"><a href="tel:+918283832322">+91 82838 32322</a></div>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="info-icon">📧</div>
+                    <div>
+                        <div class="info-label">Email</div>
+                        <div class="info-value"><a href="mailto:iscalify@gmail.com">iscalify@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="info-icon">💬</div>
+                    <div>
+                        <div class="info-label">WhatsApp</div>
+                        <div class="info-value"><a href="https://wa.me/message/5R6USAIPGQ3ZG1" target="_blank">Message us directly
+                                →</a></div>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <div class="info-label">Location</div>
+                        <div class="info-value">Mohali, Punjab 160071<br>India</div>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="info-icon">🕐</div>
+                    <div>
+                        <div class="info-label">Business Hours</div>
+                        <div class="info-value">Mon–Sat: 9:00 AM – 7:00 PM<br>Response within 2 hours guaranteed</div>
+                    </div>
+                </div>
+
+                <div class="perks-grid">
+                    <div class="perk-item">
+                        <div class="perk-icon">✅</div>
+                        <div class="perk-text">No commitment required</div>
+                    </div>
+                    <div class="perk-item">
+                        <div class="perk-icon">🆓</div>
+                        <div class="perk-text">100% Free call</div>
+                    </div>
+                    <div class="perk-item">
+                        <div class="perk-icon">⚡</div>
+                        <div class="perk-text">Response in 2 hours</div>
+                    </div>
+                    <div class="perk-item">
+                        <div class="perk-icon">🎯</div>
+                        <div class="perk-text">Real strategy, not a pitch</div>
+                    </div>
+                </div>
+
+                <div style="margin-top:40px">
+                    <a href="https://calendly.com/iscalify/iscalify" target="_blank" class="btn-primary-accent"
+                        style="width:100%;justify-content:center">📅 Book on Calendly →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-right">
+            <div class="reveal">
+                <div class="section-overline accent" style="margin-bottom:32px">Send Us a Message</div>
+                <form id="contact-form" action="https://formsubmit.co/iscalify@gmail.com" method="POST" style="max-width:560px">
+                    <input type="hidden" name="_subject" value="New Lead Submission - Iscalify Website">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                        <div class="form-group">
+                            <label class="form-label dark-label" style="color:var(--grey-400)">Full Name *</label>
+                            <input type="text" name="Name" class="form-input" placeholder="Your name" required
+                                style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label dark-label" style="color:var(--grey-400)">Phone Number *</label>
+                            <input type="tel" name="Phone" class="form-input" placeholder="+91 82838 32322" required
+                                style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label dark-label" style="color:var(--grey-400)">Email Address *</label>
+                        <input type="email" name="Email" class="form-input" placeholder="you@company.com" required
+                            style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label dark-label" style="color:var(--grey-400)">Business Name</label>
+                        <input type="text" name="Business Name" class="form-input" placeholder="Your company name"
+                            style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label dark-label" style="color:var(--grey-400)">Monthly Ad Budget</label>
+                        <select name="Monthly Ad Budget" class="form-select"
+                            style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                            <option value="">Select your budget</option>
+                            <option>Under ₹30,000/month</option>
+                            <option>₹30,000 – ₹1,00,000/month</option>
+                            <option>₹1,00,000 – ₹5,00,000/month</option>
+                            <option>₹5,00,000+/month</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label dark-label" style="color:var(--grey-400)">Service Interested
+                            In</label>
+                        <select name="Service Interested In" class="form-select"
+                            style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                            <option value="">Select a service</option>
+                            <option>Meta Ads</option>
+                            <option>Google Ads</option>
+                            <option>SEO</option>
+                            <option>Web Development</option>
+                            <option>Social Media</option>
+                            <option>Everything – Full Growth Package</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label dark-label" style="color:var(--grey-400)">Tell Us About Your
+                            Goals</label>
+                        <textarea name="Goals & Challenges" class="form-textarea"
+                            placeholder="What results are you looking for? What's your biggest marketing challenge right now?"
+                            style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white);min-height:120px"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary-accent"
+                        style="width:100%;justify-content:center;font-size:1rem">Submit & Get Free Audit →</button>
+                    <p style="font-size:0.78rem;color:var(--grey-mid);margin-top:12px;text-align:center">We'll reply
+                        within 2 hours during business hours.</p>
+                </form>
+                <div id="form-success" style="display:none;text-align:center;padding:48px 0">
+                    <div style="font-size:2.5rem;margin-bottom:16px">✅</div>
+                    <h3
+                        style="font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;text-transform:uppercase;margin-bottom:12px;color:var(--white)">
+                        Message Sent!</h3>
+                    <p style="color:var(--grey-400)">We'll be in touch within 2 hours. Check WhatsApp for a quick hello
+                        from our team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bold-section dark" style="padding-bottom:100px">
+        <div class="container-md">
+            <div class="reveal">
+                <div class="section-overline accent" style="margin-bottom:32px">Common Questions</div>
+                <h2 class="bold-heading" style="color:var(--white);margin-bottom:48px">FAQ.</h2>
+            </div>
+            <div class="reveal" id="faq">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">How quickly can we start seeing results?
+                        <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">Most clients see measurable improvement in ROAS or CPL within 30 days.
+                        Significant results typically appear within 60–90 days as we gather data, test creatives, and
+                        optimise. We set realistic expectations from day one.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">What's your minimum budget requirement? <span
+                            class="faq-icon">+</span></button>
+                    <div class="faq-answer">For Meta Ads or Google Ads management, we typically recommend a minimum ad
+                        spend of ₹30,000–₹50,000/month to get statistically meaningful data. Our management fee is
+                        separate and discussed during the strategy call.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">Do you work with businesses outside of
+                        Mohali? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">Yes — we work with businesses across India. Our clients are based in Delhi,
+                        Mumbai, Bangalore, Pune, and beyond. Digital marketing is location-agnostic and we communicate
+                        via WhatsApp, Zoom, and email.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">What makes Iscalify different from other
+                        agencies? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">We're obsessed with ROAS, not vanity metrics. No juniors handle your
+                        account. You get a senior strategist, real-time dashboard access, and weekly plain-English
+                        reports. We measure success the same way you do — revenue.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">What does the free strategy call include?
+                        <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">A 30-minute 1:1 call where we audit your current marketing setup, identify
+                        the biggest opportunities and leaks in your funnel, and give you a clear action plan — whether
+                        you hire us or not. No sales pressure, just real strategy.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="reveal">
+                <h2 class="cta-headline">Stop Wasting<br>Ad Budget.<br>Call Us.</h2>
+                <p class="cta-sub">Book your free strategy call today. 30 minutes that could change your business
+                    trajectory.</p>
+                <div class="cta-actions">
+                    <a href="https://wa.me/message/5R6USAIPGQ3ZG1" target="_blank" class="btn-primary-black">💬 WhatsApp Us
+                        Now</a>
+                    <a href="https://calendly.com/iscalify/iscalify" target="_blank" class="btn-outline-white">📅 Book on
+                        Calendly →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">Iscalify</div>
+          <p class="footer-tagline">Performance marketing agency in Mohali, Punjab. Meta Ads, Google Ads, SEO & Web
+            Development that delivers real ROAS.</p>
+
+        </div>
+        <div>
+          <div class="footer-heading">Services</div>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Meta Ads</a>
+            <a href="services.html" class="footer-link">Google Ads</a>
+            <a href="services.html" class="footer-link">SEO</a>
+            <a href="services.html" class="footer-link">Web Development</a>
+            <a href="services.html" class="footer-link">Social Media</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="case-studies.html" class="footer-link">Case Studies</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <div class="footer-links">
+            <a href="mailto:iscalify@gmail.com" class="footer-link">iscalify@gmail.com</a>
+            <a href="tel:+918283832322" class="footer-link">+91 82838 32322</a>
+            <a href="https://wa.me/message/5R6USAIPGQ3ZG1" class="footer-link" target="_blank">WhatsApp Us</a>
+            <span class="footer-link">Mohali, Punjab 160071</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 Iscalify. All rights reserved.</div>
+        <div class="footer-copy">Performance Marketing Agency · Mohali, Punjab</div>
+      </div>
+    </div>
+  </footer>
+
+    <a href="https://wa.me/message/5R6USAIPGQ3ZG1" class="whatsapp-float" target="_blank">💬</a>
+    <script src="global.js"></script>
+    <script>
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('.faq-icon');
+            const isOpen = answer.classList.contains('open');
+            document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+            document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('open'));
+            if (!isOpen) { answer.classList.add('open'); icon.classList.add('open'); }
+        }
+        document.getElementById('contact-form')?.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Sending Lead...';
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('https://formsubmit.co/ajax/iscalify@gmail.com', {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (response.ok) {
+                    form.style.display = 'none';
+                    document.getElementById('form-success').style.display = 'block';
+                } else {
+                    form.submit();
+                }
+            } catch (err) {
+                form.submit();
+            }
+        });
+    </script>
+</body>
+
+</html>

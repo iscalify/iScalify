@@ -1,0 +1,7 @@
+http://iscalify.com/* https://iscalify.com/:splat 301!
+
+/about          /about.html         200
+/services       /services.html      200
+/case-studies   /case-studies.html  200
+/results        /case-studies.html  200
+/contact        /contact.html       200
