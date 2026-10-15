@@ -5,3 +5,5 @@ http://iscalify.com/* https://iscalify.com/:splat 301!
 /case-studies   /case-studies.html  200
 /results        /case-studies.html  200
 /contact        /contact.html       200
+/blog                    /blog.html                    200
+/blog/*                  /blog/:splat.html             200
