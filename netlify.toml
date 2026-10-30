@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  command = "node scripts/build-site.mjs"
+  publish = "dist"
 
 [[headers]]
   for = "/*"
@@ -9,11 +10,27 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
-  for = "/*.css"
+  for = "/styles.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/global.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/contact-form.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Only content-hashed CSS and JavaScript receive immutable caching.
+[[headers]]
+  for = "/assets/*.css"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/*.js"
+  for = "/assets/*.js"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
