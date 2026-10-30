@@ -8,12 +8,12 @@ Node.js 20+ and Python 3.11+ are sufficient; there are no install-time site depe
 
 ```sh
 node scripts/build-site.mjs
-node --test tests/contact-form.test.cjs
+node --test tests/*.test.cjs
 python3 tests/check-site.py
 python3 tests/check-site.py --built
 ```
 
-Netlify runs the build command from `netlify.toml` and publishes `dist/`. The build
+Netlify runs the JavaScript tests and build command from `netlify.toml`, then publishes `dist/`. The build
 creates content-hashed CSS and JavaScript URLs so a previous browser cache cannot
 keep new pages on old assets. Legacy asset URLs remain available with revalidation.
 Only known clean page URLs are rewritten; legacy `.html` aliases permanently
