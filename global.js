@@ -13,6 +13,7 @@ const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 hamburger?.addEventListener('click', () => {
   mobileMenu?.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', String(mobileMenu?.classList.contains('open') || false));
   const spans = hamburger.querySelectorAll('span');
   hamburger.classList.toggle('active');
   if (hamburger.classList.contains('active')) {
@@ -29,6 +30,7 @@ document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu?.classList.remove('open');
     hamburger?.classList.remove('active');
+    hamburger?.setAttribute('aria-expanded', 'false');
     if (hamburger) {
       hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
     }
@@ -45,25 +47,29 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 // ── Intersection Observer for reveal animations ──────
-const revealObserver = new IntersectionObserver((entries) => {
+const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches || false;
+const revealObserver = !reducedMotion && 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
+      entry.target.removeAttribute('data-reveal-pending');
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+}, { threshold: 0, rootMargin: '0px 0px -20px 0px' }) : null;
 
 // Immediately check all elements — if already in viewport, show right away
 function initReveal() {
   document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
     const rect = el.getBoundingClientRect();
     const inView = rect.top < window.innerHeight && rect.bottom > 0;
-    if (inView) {
+    if (inView || !revealObserver) {
       // Add a tiny delay for above-fold items so they animate in on load
       requestAnimationFrame(() => el.classList.add('visible'));
+      el.removeAttribute('data-reveal-pending');
     } else {
       revealObserver.observe(el);
+      el.setAttribute('data-reveal-pending', '');
     }
   });
 }
@@ -92,16 +98,16 @@ function animateCounter(el) {
   requestAnimationFrame(tick);
 }
 
-const counterObserver = new IntersectionObserver((entries) => {
+const counterObserver = !reducedMotion && 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       animateCounter(entry.target);
       counterObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.5 }) : null;
 
-document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
+document.querySelectorAll('[data-target]').forEach(el => counterObserver?.observe(el));
 
 // ── Smooth scroll for anchor links ───────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -122,10 +128,11 @@ document.querySelectorAll('.stagger-children').forEach(parent => {
     child.classList.add('reveal');
     const rect = child.getBoundingClientRect();
     const inView = rect.top < window.innerHeight && rect.bottom > 0;
-    if (inView) {
+    if (inView || !revealObserver) {
       requestAnimationFrame(() => child.classList.add('visible'));
     } else {
       revealObserver.observe(child);
+      child.setAttribute('data-reveal-pending', '');
     }
   });
 });

@@ -1511,7 +1511,16 @@ footer {
 }
 
 /* ─── Scroll Animations ─────────────────────────── */
-.reveal {
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hide only after an observer has successfully registered the element. */
+.reveal[data-reveal-pending] {
   opacity: 0;
   transform: translateY(36px);
   transition: opacity 0.85s cubic-bezier(0.23, 1, 0.32, 1), transform 0.85s cubic-bezier(0.23, 1, 0.32, 1);
@@ -1522,7 +1531,7 @@ footer {
   transform: translateY(0);
 }
 
-.reveal-left {
+.reveal-left[data-reveal-pending] {
   opacity: 0;
   transform: translateX(-48px);
   transition: opacity 0.85s cubic-bezier(0.23, 1, 0.32, 1), transform 0.85s cubic-bezier(0.23, 1, 0.32, 1);
@@ -1533,7 +1542,7 @@ footer {
   transform: translateX(0);
 }
 
-.reveal-right {
+.reveal-right[data-reveal-pending] {
   opacity: 0;
   transform: translateX(48px);
   transition: opacity 0.85s cubic-bezier(0.23, 1, 0.32, 1), transform 0.85s cubic-bezier(0.23, 1, 0.32, 1);
@@ -2108,6 +2117,13 @@ footer {
   letter-spacing: 0.1em;
   margin-bottom: 24px;
 }
+.article-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 32px 0;
+  border: 1px solid rgba(184, 190, 254, 0.2);
+}
 .article-body {
   font-size: 1.08rem;
   line-height: 1.85;
@@ -2136,13 +2152,13 @@ footer {
 .article-body ol { list-style: decimal; }
 .article-body li { margin-bottom: 0.55em; }
 .article-body strong { color: var(--white); }
-.article-body a {
+.article-body a:not(.btn-primary-accent):not(.btn-outline-white) {
   color: var(--accent);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.article-body a:hover { color: var(--accent-light); }
+.article-body a:not(.btn-primary-accent):not(.btn-outline-white):hover { color: var(--accent-light); }
 .article-cta {
   background: var(--surface-2);
   border: 1px solid rgba(184, 190, 254, 0.25);
@@ -2178,3 +2194,22 @@ footer {
 }
 .breadcrumbs a { color: var(--accent); }
 .breadcrumbs a:hover { color: var(--accent-light); }
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid var(--accent-light);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal[data-reveal-pending],
+  .reveal-left[data-reveal-pending],
+  .reveal-right[data-reveal-pending] {
+    opacity: 1;
+    transform: none;
+  }
+}
