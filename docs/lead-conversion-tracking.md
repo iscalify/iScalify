@@ -1,29 +1,38 @@
-# Iscalify lead analytics — event integration
+# Iscalify GA4 and lead conversion tracking
 
-## Current status
-The website repository contains no GA4 measurement ID or GTM installation. GA4 is not connected to the Windsor.ai reporting plugin. This change instruments event handlers but does not install third-party scripts, set cookies, transmit event data, or activate analytics.
-
-Before collecting GA4 data, obtain the real GA4 web stream Measurement ID and use a suitable consent management setup. Do not invent a Measurement ID. Follow consent and privacy requirements, particularly for the EEA/UK.
+## Installation status
+- Google tag identifier provided by Iscalify: **G-W53H59HNGS**
+- Google tag source: `https://www.googletagmanager.com/gtm.js?id=G-W53H59HNGS`, using Google's current Google tag loader format for a G- identifier (not a GTM- container)
+- Consent mode: **basic opt-in** — the Google tag is not requested and no GA4 events are queued until analytics consent is granted
+- Analytics preference is stored locally under `iscalify_analytics_consent_v1`
+- Visitors can accept, decline or change their choice with a footer button; declining after previously accepting revokes consent and reloads to stop the tag
+- Consent Mode v2 `analytics_storage` is enabled after acceptance; ad_storage, ad_user_data and ad_personalization remain denied
+- No form contents or contact details are included in events
 
 ## Events
-
-| Event | Condition | Lead classification |
+| GA4 event | Trigger | Meaning |
 | --- | --- | --- |
-| generate_lead | FormSubmit AJAX request succeeds and the success message is shown | Confirmed form lead — preferred key event |
-| contact_phone_click | User activates a tel link | Intent only, not a call |
-| contact_email_click | User activates a mailto link | Intent only, not a sent email |
-| contact_whatsapp_click | User opens a WhatsApp link | Intent only, not a sent message |
-| appointment_link_click | User opens Calendly | Intent only, not a completed booking |
+| generate_lead | FormSubmit's AJAX request returns success | Successful contact-form submission |
+| contact_phone_click | User clicks a tel link | Interest only, not a completed call |
+| contact_email_click | User clicks a mailto link | Interest only, not a sent email |
+| contact_whatsapp_click | User clicks a WhatsApp link | Interest only, not a sent message |
+| appointment_link_click | User clicks a Calendly link | Interest only, not a completed booking |
 
-No personal or business information is sent in event properties. Only static method/source names and the site's path are provided. The native FormSubmit fallback cannot confirm a completed submission, so it does not trigger generate_lead.
+Event properties are limited to page_path, lead_source, contact_method, booking_platform.
 
-## Enabling and validating
-1. Configure the Google tag with the real GA4 web stream Measurement ID and privacy/consent controls. Install it exactly once.
-2. If window.gtag exists, the site sends standard event calls. If GTM is present without gtag, it pushes the events prefixed iscalify_ to the existing dataLayer; create GTM Custom Event triggers and GA4 Event tags mapping to the names above, respecting consent.
-3. Mark generate_lead as the GA4 key event, not every click event. Avoid counting automatically detected form_submit and generate_lead as two leads.
-4. Test using GA4 DebugView and one genuine test form. Confirm no event appears for a failed submission, and no PII appears in any event.
-5. Use your CMP to respect visitor consent before installing/activating tags, especially for EEA and UK audiences.
+The form's native fallback navigates away to FormSubmit if AJAX fails. Because this site cannot confirm completion in that fallback, it intentionally does not trigger generate_lead.
 
-References:
-https://developers.google.com/analytics/devguides/collection/ga4/reference/events
-https://developers.google.com/tag-platform/security/guides/consent
+## Validation checklist
+1. Visit a fresh browser session, without prior consent. Verify **no request** to googletagmanager.com/gtm.js or GA4 collect endpoints before accepting.
+2. Click Decline. No analytics tag must load and no tracking events must be sent.
+3. Reopen Analytics preferences in the footer, click Accept analytics and confirm the Google tag loads once and GA4 page_view appears.
+4. In Google Analytics DebugView/Tag Assistant, verify exactly one event for each contact action and exactly one generate_lead for a successful form submission. Test that unsuccessful submissions do not generate a lead.
+5. Click Decline after an accepted session, confirm GA4 stops loading on the new page and first-party _ga cookies are cleared.
+6. In GA4 Admin, mark **generate_lead** as the key event if desired; do not count click events as verified leads.
+7. Connect the GA4 property in Windsor.ai separately if reporting through ChatGPT is desired. A measurement ID does not grant GA4 account/report access.
+
+## Important
+This lightweight consent dialog is a basic technical opt-in, **not** a substitute for a legal privacy/cookie notice or a professionally reviewed consent-management platform. Review local and international requirements, especially for UK/EEA audiences, before relying on it for regulatory compliance.
+
+Google reference: https://developers.google.com/tag-platform/security/concepts/consent-mode
+Google tag installation: https://developers.google.com/tag-platform/gtagjs

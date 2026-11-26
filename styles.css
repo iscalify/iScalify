@@ -2182,3 +2182,57 @@ footer {
 }
 .breadcrumbs a { color: var(--accent); }
 .breadcrumbs a:hover { color: var(--accent-light); }
+
+
+/* Privacy-conscious analytics consent UI — only shown without a saved choice */
+.iscalify-consent-banner {
+  position: fixed;
+  z-index: 11000;
+  bottom: 18px;
+  left: 18px;
+  width: min(490px, calc(100vw - 36px));
+  border: 1px solid rgba(184, 190, 254, 0.35);
+  border-radius: 12px;
+  padding: 18px;
+  background: #14141e;
+  color: #f0f0f8;
+  box-shadow: 0 12px 42px rgba(0, 0, 0, 0.4);
+}
+.iscalify-consent-banner[hidden] { display: none; }
+.iscalify-consent-title { display: block; font-size: 0.95rem; font-weight: 700; }
+.iscalify-consent-description {
+  margin: 8px 0 14px;
+  color: #c8c8d8;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+.iscalify-consent-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.iscalify-consent-button {
+  border: 1px solid #b8befe;
+  border-radius: 6px;
+  background: #b8befe;
+  color: #08080e;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.iscalify-consent-button--secondary {
+  background: transparent;
+  color: #f0f0f8;
+  border-color: #a6a6b8;
+}
+.iscalify-consent-button:focus-visible,
+.iscalify-consent-settings:focus-visible {
+  outline: 2px solid #b8befe;
+  outline-offset: 3px;
+}
+.iscalify-consent-settings {
+  background: none;
+  border: 0;
+  color: #c8c8d8;
+  padding: 4px 0;
+  font-size: 0.78rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
