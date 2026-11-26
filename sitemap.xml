@@ -3,56 +3,14 @@
   <url>
     <loc>https://iscalify.com/</loc>
     <lastmod>2026-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://iscalify.com/about</loc>
     <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://iscalify.com/services</loc>
     <lastmod>2026-11-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://iscalify.com/case-studies</loc>
-    <lastmod>2026-11-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://iscalify.com/contact</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://iscalify.com/blog</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://iscalify.com/blog/meta-ads-budget-india</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://iscalify.com/blog/d2c-brand-meta-ads-not-profitable</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://iscalify.com/blog/lead-ads-vs-website-leads</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://iscalify.com/services/meta-ads</loc>
@@ -60,6 +18,94 @@
   </url>
   <url>
     <loc>https://iscalify.com/services/google-ads</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/services/service-business-marketing</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/markets/united-states</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/markets/united-kingdom</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/markets/canada</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/markets/australia</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/markets/india</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/case-studies</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/contact</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/google-ads-home-services-usa</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/local-seo-service-businesses-uk</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/lead-generation-service-businesses-canada</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/google-ads-trades-australia</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/digital-marketing-service-businesses-india</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/google-ads-vs-meta-ads-service-businesses</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/service-business-landing-pages</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/qualified-leads-customer-acquisition-cost</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/choose-service-business-marketing-agency</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/service-business-leads-not-converting</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/meta-ads-budget-india</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/d2c-brand-meta-ads-not-profitable</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://iscalify.com/blogs/lead-ads-vs-website-leads</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
 </urlset>

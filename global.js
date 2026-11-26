@@ -109,8 +109,8 @@ const counterObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
 
 // ── Smooth scroll for anchor links ───────────────────
-// Keep native focus transfer for the service pages' skip-to-content links.
-document.querySelectorAll('a[href^="#"]:not(.sd-skip-link)').forEach(anchor => {
+// Keep native focus and fragment navigation for skip links and article contents.
+document.querySelectorAll('a[href^="#"]:not(.sd-skip-link):not([data-native-anchor])').forEach(anchor => {
   anchor.addEventListener('click', e => {
     const target = document.querySelector(anchor.getAttribute('href'));
     if (target) {

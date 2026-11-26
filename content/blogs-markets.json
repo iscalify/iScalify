@@ -1,0 +1,347 @@
+{
+  "articles": [
+    {
+      "slug": "google-ads-home-services-usa",
+      "title": "Google Ads for Home Service Businesses in the US",
+      "description": "Build a US home services Google Ads plan around service areas, job intent, staffed calls and qualified bookings instead of lead counts alone.",
+      "category": "Google Ads",
+      "markets": [
+        "United States"
+      ],
+      "published": "2026-11-26",
+      "modified": "2026-11-26",
+      "image": "/assets/blog/google-ads-home-services-usa.webp",
+      "image_alt": "Illustration of a homeowner, a house and a tradesperson inside a search lens",
+      "summary": "A practical campaign framework for US home service companies that connects advertising to the jobs, neighborhoods and appointment capacity they can actually serve",
+      "key_takeaways": [
+        "Define profitable service areas and job types before choosing campaign coverage",
+        "Match each search intent to a useful page and a realistic contact promise",
+        "Review qualified enquiries and completed jobs alongside advertising conversions"
+      ],
+      "body_html": "<p>A home service company can receive plenty of enquiries and still have a weak advertising program. Requests may come from outside the dispatch area, involve work the team does not perform, or arrive when nobody can answer. A useful Google Ads plan starts with the operating business: which jobs it wants, where crews can travel and how a customer reaches a person who can help.</p>\n<p>For a US company serving a defined local area, use the following framework to connect campaign decisions with actual appointment capacity. It works as a planning exercise before launch and as a review of an existing account.</p>\n<h2 id=\"define-the-service-map\">Define the service map before the campaign map</h2>\n<p>Write down the cities, ZIP codes and neighborhoods the team can reliably cover. Then mark exceptions: areas available only on certain days, trips that require a minimum job size, and addresses outside the normal route. A boundary based on actual travel and crew availability is more useful than choosing an entire state because the company is based there.</p>\n<p><a href=\"https://support.google.com/google-ads/answer/1722038?hl=en\">Google's advanced location guidance</a> distinguishes people likely present in a location from those showing interest in it. Review that distinction for a business that dispatches locally. Also remember that <a href=\"https://support.google.com/google-ads/answer/6317\">location targeting is based on signals and is not perfectly accurate</a>. Confirm the job address during intake.</p>\n<h2 id=\"separate-the-jobs-customers-need\">Separate the jobs customers need</h2>\n<p>Organize the plan around meaningful differences in the requested work. A customer looking for a one-time cleaning needs different information from someone comparing a recurring arrangement. A repair enquiry may require model information, while an installation estimate may need photos or a site visit. These differences should shape the page, questions and definition of a useful lead.</p>\n<table><thead><tr><th scope=\"col\">Customer intent</th><th scope=\"col\">Page information</th><th scope=\"col\">Useful intake question</th></tr></thead><tbody><tr><td>One-time service</td><td>Included tasks, exclusions and availability</td><td>What needs doing and by when?</td></tr><tr><td>Recurring service</td><td>Visit options and how the first assessment works</td><td>How often is help needed?</td></tr><tr><td>Larger project estimate</td><td>Project process and information needed for a quote</td><td>What is the scope and desired start window?</td></tr></tbody></table>\n<p>Separate campaigns only when the distinction needs its own budget, location, schedule or measurement. Creating many small campaigns without a business reason can make the account harder to review.</p>\n<h2 id=\"check-the-searches-behind-the-clicks\">Check the searches behind the clicks</h2>\n<p>Review actual search activity alongside the enquiries it generated. <a href=\"https://support.google.com/google-ads/answer/7102466?isVariant=b\">Google explains how the search terms report can inform negative keywords</a>, while warning that negative match types behave differently from positive keywords. Use the report to identify clear mismatches, then check the intended scope of an exclusion before applying it.</p>\n<p>A cleaning company might exclude employment searches if it is advertising customer services. It should be more careful with words such as “cost” or “estimate,” which can describe legitimate buyers. Keep a short change log recording the observed problem, the exclusion and what happens afterward. Do not assume every unfamiliar phrase is low quality.</p>\n<h2 id=\"make-the-contact-promise-deliverable\">Make the contact promise deliverable</h2>\n<p>Choose the primary call to action according to the next step the team can actually provide. “Call to check availability” and “Request an estimate” set different expectations. A form submission should not imply a confirmed appointment if a dispatcher still needs to review the request.</p>\n<p>For calls, compare advertised hours with the people answering them. For forms, name the expected reply window and offer a preferred contact time. A company covering more than one time zone should specify which local time it means. Check missed calls, incomplete messages and unanswered requests before concluding that the advertising audience is wrong.</p>\n<p>Keep intake brief: service, ZIP code, timing and contact details usually establish an initial routing decision. Ask for additional information when it helps scope the particular job.</p>\n<h2 id=\"build-a-page-that-helps-a-homeowner-decide\">Build a page that helps a homeowner decide</h2>\n<p>Answer the questions a homeowner needs resolved before making contact: Is this service available at my address? What does it include? Who performs the work? How is the estimate prepared? What happens after I enquire? Use real project images with context where available, and publish only credentials or guarantees the business can substantiate.</p>\n<p>Give exclusions the same clarity as the offer. If a service does not include hauling, specialist materials or an immediate visit, explain that before the enquiry. Our <a href=\"/blogs/service-business-landing-pages\">service business landing page guide</a> develops this decision process in more detail.</p>\n<h2 id=\"follow-the-enquiry-through-to-the-job\">Follow the enquiry through to the job</h2>\n<p>Keep a simple record connecting each enquiry to its service, location, contact outcome, quote and booking. Mark why a request was unsuitable. “Outside area” leads to a different response from “quote declined” or “could not reach customer.” Review completed jobs and the resources they consumed before expanding a campaign.</p>\n<p><a href=\"https://support.google.com/google-ads/answer/11459091?hl=en\">Google distinguishes qualified leads from converted leads</a> so businesses can describe later stages of their process. Choose definitions that fit your operation, and document them. A form received, a suitable request and an accepted estimate should not be reported as interchangeable outcomes.</p>\n<h3 id=\"a-hypothetical-dispatch-example\">A hypothetical dispatch example</h3>\n<p>Imagine an independent appliance service company working in selected ZIP codes around Columbus. Its team accepts particular appliance types and offers scheduled appointments. Enquiries requesting unsupported equipment or distant visits consume time without creating suitable work. The company could clarify supported appliances, add a ZIP code question and align its advertising with the appointment calendar. This is an illustrative business scenario, not an Iscalify client result.</p>\n<p>Start with the constraint visible in your own records. Explore <a href=\"/services/google-ads\">Iscalify's Google Ads service</a>, the <a href=\"/markets/united-states\">United States market page</a> and our <a href=\"/services/service-business-marketing\">service business marketing approach</a> when preparing a brief. Bring the service map, enquiry outcomes and available capacity so the discussion can address the work you actually want to book.</p>",
+      "faq": [
+        {
+          "question": "Should a home service business target an entire state?",
+          "answer": "Only if its delivery capacity and offer support that coverage. Start with actual dispatch areas, travel constraints and appointment availability, then review where suitable enquiries and completed jobs originate."
+        },
+        {
+          "question": "Is a phone call automatically a qualified lead?",
+          "answer": "No. A call becomes useful when the customer needs a service you provide, is within your service area and can take a relevant next step. Track that assessment separately from the call itself."
+        },
+        {
+          "question": "How much should a US home service business spend on Google Ads?",
+          "answer": "There is no universal budget. Set an initial test around job economics, capacity, the cost you can afford to acquire work and the measurement available. Reassess using qualified enquiries and booked jobs."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Google Ads advanced location options",
+          "url": "https://support.google.com/google-ads/answer/1722038?hl=en"
+        },
+        {
+          "label": "Google Ads location targeting and accuracy",
+          "url": "https://support.google.com/google-ads/answer/6317"
+        },
+        {
+          "label": "Google Ads negative keyword ideas from search terms",
+          "url": "https://support.google.com/google-ads/answer/7102466?isVariant=b"
+        },
+        {
+          "label": "Google Ads qualified and converted leads",
+          "url": "https://support.google.com/google-ads/answer/11459091?hl=en"
+        }
+      ],
+      "related_slugs": [
+        "service-business-landing-pages",
+        "qualified-leads-customer-acquisition-cost",
+        "google-ads-vs-meta-ads-service-businesses"
+      ],
+      "service_links": [
+        {
+          "label": "Google Ads management",
+          "href": "/services/google-ads"
+        },
+        {
+          "label": "Service business marketing",
+          "href": "/services/service-business-marketing"
+        },
+        {
+          "label": "Marketing for the United States",
+          "href": "/markets/united-states"
+        }
+      ]
+    },
+    {
+      "slug": "local-seo-service-businesses-uk",
+      "title": "Local SEO for UK Service Businesses With Real Service Areas",
+      "description": "Plan local SEO around the UK towns and postcodes you serve, accurate Business Profile details and useful service pages backed by genuine evidence.",
+      "category": "Local SEO",
+      "markets": [
+        "United Kingdom"
+      ],
+      "published": "2026-11-26",
+      "modified": "2026-11-26",
+      "image": "/assets/blog/local-seo-service-businesses-uk.webp",
+      "image_alt": "Illustration of brick service shops on a folded street map beneath a lavender location pin",
+      "summary": "A practical way to plan UK local search content around real operating areas, customer questions and evidence, with an accurate Google Business Profile as the foundation",
+      "key_takeaways": [
+        "Represent the business and its customer-facing locations accurately",
+        "Use service pages and meaningful local detail to answer buying questions",
+        "Assess enquiries by service and postcode alongside search visibility"
+      ],
+      "body_html": "<p>For a UK service business, local SEO should help a nearby customer establish whether you can do the work, reach their property and offer a credible next step. A list of town names cannot answer those questions by itself. Start with the service area and operating model, then build pages that explain how the business works in that area.</p>\n<p>This framework suits companies that visit customers, such as cleaners, gardeners or property maintenance teams. It also helps businesses with a genuine customer-facing premises decide what belongs on their website and Google Business Profile.</p>\n<h2 id=\"describe-the-business-as-it-operates\">Describe the business as it operates</h2>\n<p>Check the business name, main contact details, opening hours, service categories and website link. These details should describe the same operation everywhere a customer encounters them. If the team is unavailable on a particular day, an online promise of immediate help creates avoidable disappointment even when the enquiry is relevant.</p>\n<p><a href=\"https://support.google.com/business/answer/9157481?hl=en\">Google's service-area guidance</a> distinguishes businesses that visit customers from those that also receive them at their premises. Businesses that do not serve customers at their address should hide that address on the profile. Google's <a href=\"https://support.google.com/business/answer/3038177\">business representation guidelines</a> also set requirements for real locations. An unstaffed virtual office is not a shortcut to a genuine local presence.</p>\n<h2 id=\"turn-postcodes-into-an-operating-plan\">Turn postcodes into an operating plan</h2>\n<p>Build a list of the towns, postcode areas and nearby places you actually serve. Add practical notes for the team: typical visit days, access questions, travel limits and any job types that justify a longer journey. This internal map should inform the website's coverage statement and the questions asked during an enquiry.</p>\n<p>A customer should be able to find out whether their location is covered without reading a wall of place names. A concise coverage page can name core areas, explain boundaries and invite a postcode check when an address is uncertain. Do not imply a branch in every town simply because the team travels there.</p>\n<h2 id=\"give-service-pages-a-clear-purpose\">Give service pages a clear purpose</h2>\n<p>Start with the services that have different buying questions. End-of-tenancy cleaning, recurring domestic cleaning and office cleaning may need different scope details, scheduling and quote information. Each page should explain what is included, what is excluded, how the work is assessed and what the customer needs to provide.</p>\n<table><thead><tr><th scope=\"col\">Page</th><th scope=\"col\">Customer question</th><th scope=\"col\">Useful evidence</th></tr></thead><tbody><tr><td>Individual service</td><td>Does this cover the work I need?</td><td>Actual scope, process and relevant project examples</td></tr><tr><td>Service area</td><td>Can your team reach my property?</td><td>Real coverage and arrangements for uncertain addresses</td></tr><tr><td>Project example</td><td>Have you handled a similar situation?</td><td>Original images, job context and the work completed</td></tr><tr><td>Contact</td><td>What happens after I get in touch?</td><td>Required information, contact methods and reply expectations</td></tr></tbody></table>\n<p>Give each page a descriptive title and link it from the relevant service navigation. Useful pages should be straightforward for customers to discover, not reachable only through a search engine.</p>\n<h2 id=\"publish-local-detail-only-when-it-is-useful\">Publish local detail only when it is useful</h2>\n<p>A dedicated location page needs a reason to exist. That reason could be a documented project, a distinct appointment arrangement or information about the types of work the team actually performs there. Changing the town name in otherwise identical copy adds little to a customer's decision.</p>\n<p>Before creating a page, ask what someone in that area needs to know that your main service page does not answer. If there is no meaningful difference, strengthen the shared service or coverage page. If there is, describe it precisely and support it with evidence the business owns or has permission to publish.</p>\n<h3 id=\"a-hypothetical-cleaning-company-example\">A hypothetical cleaning company example</h3>\n<p>Imagine a cleaning company serving selected Leeds postcodes and a limited number of nearby appointments. It could publish one clear recurring-cleaning page, a coverage explanation and a genuine project account from an area it serves. A separate town page would become useful only when it can explain a distinct service arrangement or relevant work there. This scenario is illustrative, not an Iscalify customer story or a ranking forecast.</p>\n<h2 id=\"make-trust-easy-to-check\">Make trust easy to check</h2>\n<p>Explain who operates the business, how enquiries are handled and who arrives to perform the work. Use current team and project photos where practical. For a project example, state the original task, relevant constraints and what was completed. Avoid implying that every customer will receive the same outcome or quoting figures that cannot be traced to records.</p>\n<p>Keep review excerpts faithful to the original and avoid presenting an anonymous quotation as independently verified evidence. If credentials, insurance or memberships matter to the purchase, publish only accurate details the owner can substantiate. These checks improve the quality of the information customers use, regardless of where a page appears in search.</p>\n<h2 id=\"measure-local-enquiries-with-context\">Measure local enquiries with context</h2>\n<p><a href=\"https://support.google.com/business/answer/7091?hl=en\">Google describes local results using relevance, distance and prominence</a>. Complete information helps Google understand a business, but a website change does not remove the role of the searcher's location or guarantee a map position. Assess visibility alongside the requests the business can actually serve.</p>\n<p>Record the requested service, postcode, source where known and outcome of each enquiry. A change that produces more calls from outside the coverage area needs a different response from one that brings suitable work but exposes slow callbacks. Compare like-for-like periods and note service availability changes before attributing every movement to SEO.</p>\n<p>Review your <a href=\"/blogs/service-business-landing-pages\">service page experience</a> and <a href=\"/blogs/service-business-leads-not-converting\">enquiry follow-up process</a> together. Iscalify's <a href=\"/markets/united-kingdom\">United Kingdom market page</a> and <a href=\"/services/service-business-marketing\">service business marketing overview</a> can help frame a discussion around coverage, useful content and measurable customer enquiries.</p>",
+      "faq": [
+        {
+          "question": "Does a service business need a page for every UK town it covers?",
+          "answer": "No. Create a dedicated location page when you have useful local information or evidence to offer. A clear coverage page and strong individual service pages may answer the customer’s questions more effectively."
+        },
+        {
+          "question": "Can a business show its home address on Google?",
+          "answer": "Google distinguishes customer-facing premises from service-area businesses. If customers are not served at the business address, its guidance says to hide that address. Check the current requirements for your actual operating model."
+        },
+        {
+          "question": "Can local SEO guarantee a place in the map results?",
+          "answer": "No. Local results depend on several factors, including relevance, distance and prominence. Focus on accurate information, useful evidence and suitable enquiries, and evaluate visibility in the areas the business truly serves."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Google Business Profile service-area guidance",
+          "url": "https://support.google.com/business/answer/9157481?hl=en"
+        },
+        {
+          "label": "Google guidelines for representing a business",
+          "url": "https://support.google.com/business/answer/3038177"
+        },
+        {
+          "label": "Google tips to improve local ranking",
+          "url": "https://support.google.com/business/answer/7091?hl=en"
+        }
+      ],
+      "related_slugs": [
+        "service-business-landing-pages",
+        "choose-service-business-marketing-agency",
+        "service-business-leads-not-converting"
+      ],
+      "service_links": [
+        {
+          "label": "Service business marketing",
+          "href": "/services/service-business-marketing"
+        },
+        {
+          "label": "Marketing for the United Kingdom",
+          "href": "/markets/united-kingdom"
+        }
+      ]
+    },
+    {
+      "slug": "lead-generation-service-businesses-canada",
+      "title": "A Lead Generation Plan for Canadian Service Businesses",
+      "description": "Connect Canadian service enquiries with real coverage, supported languages, clear qualification and a follow-up process that reaches booked work.",
+      "category": "Lead Generation",
+      "markets": [
+        "Canada"
+      ],
+      "published": "2026-11-26",
+      "modified": "2026-11-26",
+      "image": "/assets/blog/lead-generation-service-businesses-canada.webp",
+      "image_alt": "Illustration of a consultation desk with two chairs, a phone message and an appointment calendar",
+      "summary": "A planning guide for Canadian service companies that need suitable enquiries, with practical decisions about geography, languages, contact routing and booked-job measurement",
+      "key_takeaways": [
+        "Define a usable enquiry using service, location, timing and contactability",
+        "Match advertised language and coverage with the team that handles requests",
+        "Track each stage from first enquiry to completed work to diagnose losses"
+      ],
+      "body_html": "<p>Lead generation is useful when a service company can turn an enquiry into a well-scoped conversation and a realistic booking. In Canada, that planning should start with the actual cities, communities and languages the team supports. A company serving one urban area needs a different plan from a business with several operating teams and appointment calendars.</p>\n<p>Use this framework to define who you can help, how requests reach the right person and which outcomes should guide advertising decisions. It applies whether the first contact comes through search, social advertising, a call or a website form.</p>\n<h2 id=\"define-coverage-at-the-team-level\">Define coverage at the team level</h2>\n<p>List the places each team can serve, including any travel restrictions or days reserved for outlying appointments. Use city and province names where a place name could be ambiguous. Ask for the customer's postal code during intake so staff can confirm coverage before promising a visit.</p>\n<p>Do not make national campaign coverage the default just because the website is available across Canada. A wider area should reflect a real delivery arrangement. If longer journeys need a different scope or appointment window, explain that before the customer invests time in an estimate request.</p>\n<p>For paid search, <a href=\"https://support.google.com/google-ads/answer/1722043?hl=en\">Google offers several geographic targeting options</a>. Select coverage according to where customers can be served, then review actual enquiry locations against that plan.</p>\n<h2 id=\"plan-language-support-through-the-whole-enquiry\">Plan language support through the whole enquiry</h2>\n<p>Choose languages according to the customers you serve and the people handling their requests. If you advertise in English and French, check that each enquiry can receive a useful reply in its chosen language. Translating an ad alone does not create a complete customer experience.</p>\n<p><a href=\"https://support.google.com/google-ads/answer/1722078?hl=en\">Google's current language guidance</a> describes how user understanding and ad language affect matching, with different behavior across campaign types. Check the current guidance when setting up the account. In the customer journey, keep the ad, page, form confirmation and human response consistent.</p>\n<p>If the website provides separate language versions, give visitors an obvious way to switch. <a href=\"https://developers.google.com/search/docs/specialty/international/localized-versions\">Google documents how to identify localized versions with hreflang</a>. That is a technical implementation task; the first requirement is useful, accurate content in each version.</p>\n<h2 id=\"agree-on-what-makes-an-enquiry-qualified\">Agree on what makes an enquiry qualified</h2>\n<p>Write a short definition the marketing team and the people answering requests can use consistently. For example, a qualified enquiry could mean a reachable customer, an address within coverage, a requested service the company provides and a feasible timeframe. Add project requirements when they genuinely affect whether the company can help.</p>\n<p>Do not classify every person who asks about price as unsuitable. Price questions often reveal that the page has not explained scope or the estimate process. Equally, a completed form does not prove that the job fits. <a href=\"https://support.google.com/google-ads/answer/11459091?hl=en\">Google's qualified and converted lead definitions</a> support distinguishing initial contact from later business outcomes.</p>\n<h2 id=\"route-requests-with-enough-context\">Route requests with enough context</h2>\n<p>Design the first form or call script around routing, not exhaustive discovery. Collect the information needed to decide who should reply and what they need to discuss. Leave detailed project questions for the appropriate next step unless they are essential to establish service fit.</p>\n<table><thead><tr><th scope=\"col\">Information</th><th scope=\"col\">Why it matters</th><th scope=\"col\">Next action</th></tr></thead><tbody><tr><td>Service and postal code</td><td>Confirms capability and coverage</td><td>Assign the appropriate team</td></tr><tr><td>Desired timing</td><td>Reveals whether current capacity fits</td><td>Discuss a realistic appointment window</td></tr><tr><td>Preferred language and contact method</td><td>Helps the conversation reach the right person</td><td>Route to a suitable responder</td></tr><tr><td>Brief scope description</td><td>Prevents a generic, repetitive first reply</td><td>Ask relevant follow-up questions</td></tr></tbody></table>\n<p>State the callback window in the customer's local time when teams work across regions. A missed call should have an assigned owner and a next action rather than disappearing into an unmonitored inbox.</p>\n<h2 id=\"match-the-channel-to-the-next-decision\">Match the channel to the next decision</h2>\n<p>Use search campaigns when you want to test demand expressed through relevant searches. Use social creative when showing the work, explaining a service or introducing an offer could help a customer decide to enquire. These are planning hypotheses to test against your own outcomes, not a claim that one channel always produces better leads.</p>\n<p>Send people to the next step that matches the promise. A detailed project advertisement should lead to useful scope information or a relevant enquiry flow. An appointment message should explain availability and how confirmation works. The <a href=\"/blogs/google-ads-vs-meta-ads-service-businesses\">Google Ads and Meta Ads comparison</a> helps structure this decision.</p>\n<h2 id=\"review-the-whole-route-to-booked-work\">Review the whole route to booked work</h2>\n<p>Track enquiries received, customers reached, requests qualified, estimates issued, jobs booked and work completed. Keep a reason when a lead leaves the process. Compare channels using the same definitions and allow time for longer quote cycles before judging recent enquiries.</p>\n<p>A low contact rate suggests a different problem from a low booking rate after detailed estimates. The former may require reviewing contact details and callback handling; the latter may call for a closer look at scope, availability or the offer. Avoid changing targeting simply because a total lead count looks disappointing.</p>\n<h3 id=\"a-hypothetical-regional-team-example\">A hypothetical regional team example</h3>\n<p>Imagine a property cleaning company with separate Ottawa and Montréal appointment teams. Some staff handle both English and French enquiries, while others support one language. Routing by location and preferred language could prevent suitable requests reaching an unavailable responder. Reviewing the reason for lost bookings could then show whether the main constraint is scheduling, service fit or follow-up. This is an illustrative scenario, not a report of client performance.</p>\n<p>Bring that operational detail into your brief. Explore Iscalify's <a href=\"/markets/canada\">Canada market page</a>, <a href=\"/services/service-business-marketing\">service business marketing approach</a>, <a href=\"/services/google-ads\">Google Ads management</a> and <a href=\"/services/meta-ads\">Meta Ads management</a> to frame the channel discussion around the customers your business is ready to serve.</p>",
+      "faq": [
+        {
+          "question": "Should a Canadian service business advertise in English and French?",
+          "answer": "Choose languages based on the audience you serve and the team’s ability to support the complete enquiry. When using both, provide useful pages and a reliable human response in each advertised language."
+        },
+        {
+          "question": "What information should a service enquiry form collect?",
+          "answer": "Start with the service, location or postal code, desired timing and contact details. Add language preference or scope questions when they help route the request. Avoid asking for details that will not affect the next step."
+        },
+        {
+          "question": "How can we compare leads from different advertising channels?",
+          "answer": "Use consistent stages such as reached, qualified, quoted, booked and completed. Record why requests are unsuitable and allow for the sales cycle. Raw enquiry counts alone do not describe the work a channel produces."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Google Ads geographic targeting",
+          "url": "https://support.google.com/google-ads/answer/1722043?hl=en"
+        },
+        {
+          "label": "Google Ads language guidance",
+          "url": "https://support.google.com/google-ads/answer/1722078?hl=en"
+        },
+        {
+          "label": "Google Search localized page versions",
+          "url": "https://developers.google.com/search/docs/specialty/international/localized-versions"
+        },
+        {
+          "label": "Google Ads qualified and converted leads",
+          "url": "https://support.google.com/google-ads/answer/11459091?hl=en"
+        }
+      ],
+      "related_slugs": [
+        "qualified-leads-customer-acquisition-cost",
+        "service-business-leads-not-converting",
+        "google-ads-vs-meta-ads-service-businesses"
+      ],
+      "service_links": [
+        {
+          "label": "Service business marketing",
+          "href": "/services/service-business-marketing"
+        },
+        {
+          "label": "Google Ads management",
+          "href": "/services/google-ads"
+        },
+        {
+          "label": "Meta Ads management",
+          "href": "/services/meta-ads"
+        },
+        {
+          "label": "Marketing for Canada",
+          "href": "/markets/canada"
+        }
+      ]
+    },
+    {
+      "slug": "google-ads-trades-australia",
+      "title": "Google Ads for Australian Trades With Dispatch in Mind",
+      "description": "Plan Google Ads for an Australian trade business around service postcodes, job types, account time zones and the enquiries your team can handle.",
+      "category": "Google Ads",
+      "markets": [
+        "Australia"
+      ],
+      "published": "2026-11-26",
+      "modified": "2026-11-26",
+      "image": "/assets/blog/google-ads-trades-australia.webp",
+      "image_alt": "Illustration of a trades tool bag beside a home and a large search lens",
+      "summary": "A practical guide to connecting an Australian trade company’s advertising with crew availability, local service coverage, suitable job requests and confirmed work",
+      "key_takeaways": [
+        "Set campaign coverage and promises around actual dispatch capacity",
+        "Check account time zones before relying on ad schedules",
+        "Use job outcomes and enquiry reasons to guide account changes"
+      ],
+      "body_html": "<p>For a trade business, an advertising enquiry is the start of a scheduling and scoping process. A suitable request can still become a poor use of time if it requires an impractical journey, arrives outside staffed hours or describes work the team cannot accept. Google Ads planning should therefore include the person who manages the diary, not just the person managing the account.</p>\n<p>For an Australian business, make service postcodes, customer time zones and realistic appointment windows explicit. The following framework connects campaign decisions with the work the team can deliver.</p>\n<h2 id=\"start-with-the-diary-and-the-service-area\">Start with the diary and the service area</h2>\n<p>Identify the work you want to book over the next planning period. Note the available crew, the jobs they can handle and any equipment or site information required. Then map the postcodes and suburbs that fit those arrangements. Advertising more widely is a business decision about delivery capacity, not simply a way to increase reach.</p>\n<p>Keep a separate list of conditional areas. A longer trip may make sense for a larger project but not a small call-out. Explain any such distinction in the enquiry process. Ask for the job address early enough to avoid discussing an appointment the team cannot provide.</p>\n<p>Review coverage against actual travel and booking records. Neighbouring suburbs do not necessarily create equally practical routes for your particular business.</p>\n<h2 id=\"check-which-clock-the-account-uses\">Check which clock the account uses</h2>\n<p><a href=\"https://support.google.com/google-ads/answer/6372656?hl=en\">Google's ad scheduling instructions</a> state that schedules use the account's time zone. Confirm how that corresponds to the local time of the customers you serve before relying on an opening-hours schedule.</p>\n<p>This matters when one person manages campaigns for several operating regions. Document the intended customer hours beside the account settings, and review the mapping when relevant local clock changes occur. Keep the team's actual availability in the same planning record.</p>\n<p>Do not automatically stop all advertising when the phone desk closes. A customer may be happy to request an estimate for a later reply. The decision depends on the contact route and promise: a staffed call, an enquiry form or a clearly described callback request. Avoid implying immediate attendance unless the business can deliver it.</p>\n<h2 id=\"group-work-by-the-decision-it-requires\">Group work by the decision it requires</h2>\n<p>Different jobs may need different information before an estimate can be prepared. A small maintenance task might be assessed from a description and photos. A larger project could require measurements or a site visit. Explain that distinction on the page and in the first response.</p>\n<p>Use campaign or ad group separation when it helps align the search, message, page and measurement. If two job types compete for the same limited crew but have very different scope, review them separately in the business report even if the account structure remains simple.</p>\n<p>Keep advertised work within the company's real capabilities. Mention credentials, warranties or specialist experience only when the owner can verify the exact claim.</p>\n<h2 id=\"use-searches-to-investigate-mismatches\">Use searches to investigate mismatches</h2>\n<p>Review searches alongside the enquiries they generated. <a href=\"https://support.google.com/google-ads/answer/13738234?hl=en\">Google's search terms report</a> helps show what triggered ads and identify irrelevant searches. Investigate whether customers are seeking a service, materials, training or employment.</p>\n<p>An exclusion should solve a documented mismatch. For example, a business offering painting services might find enquiries for paint supplies irrelevant, while a customer asking about preparation costs could be a suitable project lead. Check the intended reach of a negative keyword before using it across unrelated campaigns.</p>\n<p>When an apparently relevant search produces unsuitable enquiries, review the page as well. The missing information may be the service boundary, accepted job type or estimate process.</p>\n<h2 id=\"build-the-page-around-a-real-next-step\">Build the page around a real next step</h2>\n<p>Give the customer enough information to make a sensible request. State the work offered, coverage, how quotes are prepared and what happens after contact. A form can ask for the service postcode, a short description and a suitable contact time. Invite photos when they help assessment, with a clear explanation of why they are useful.</p>\n<p>Use current project examples that show the task and completed work. A photo needs context to demonstrate relevance. If the final scope depends on inspection, say so instead of suggesting that every enquiry can receive an immediate fixed quote. Our <a href=\"/blogs/service-business-landing-pages\">landing page guide</a> explores the information customers need before submitting a request.</p>\n<h2 id=\"diagnose-the-stage-that-is-losing-work\">Diagnose the stage that is losing work</h2>\n<p>Record the outcome of enquiries using consistent reasons. A simple review can reveal whether the constraint sits in advertising, routing, qualification or available capacity.</p>\n<table><thead><tr><th scope=\"col\">Observed issue</th><th scope=\"col\">Check first</th><th scope=\"col\">Possible response after review</th></tr></thead><tbody><tr><td>Requests outside coverage</td><td>Enquiry addresses and campaign geography</td><td>Clarify boundaries and review targeting</td></tr><tr><td>Missed calls</td><td>Actual call times and staffing</td><td>Align the schedule or offer a callback route</td></tr><tr><td>Unsuitable job types</td><td>Searches and page scope</td><td>Refine the service message and exclusions</td></tr><tr><td>Suitable jobs cannot be booked</td><td>Crew capacity and customer timing</td><td>Adjust availability messaging or the work being promoted</td></tr></tbody></table>\n<p>Compare booked and completed work as well as enquiry volume. Note lead times and cancellations so that a recent campaign is not judged before its estimates have had time to reach a decision.</p>\n<h3 id=\"a-hypothetical-painting-crew-example\">A hypothetical painting crew example</h3>\n<p>Imagine a painting company accepting residential projects in selected Brisbane suburbs. Its next available project window is several weeks away, but its ad implies immediate availability. Clarifying the start window and estimate process could help customers self-select before contacting the team. The useful measure would be suitable estimate requests and eventual bookings, not simply fewer enquiries. This is a hypothetical example, not an Iscalify client result.</p>\n<p>Prepare a brief with coverage, accepted jobs, appointment capacity and recent enquiry outcomes. Iscalify's <a href=\"/services/google-ads\">Google Ads service</a>, <a href=\"/markets/australia\">Australia market page</a> and <a href=\"/services/service-business-marketing\">service business marketing approach</a> provide starting points for reviewing that plan.</p>",
+      "faq": [
+        {
+          "question": "Should trades advertise only while the phone is staffed?",
+          "answer": "It depends on the promise and contact route. Calls that imply immediate help need suitable coverage. A clear estimate or callback form can still be useful outside those hours if the team follows up as described."
+        },
+        {
+          "question": "Which time zone does a Google Ads schedule use?",
+          "answer": "Google Ads schedules use the account time zone. Check its relationship to the customer’s local hours, especially when one account or team manages several regions."
+        },
+        {
+          "question": "Why can relevant trade searches still produce unsuitable leads?",
+          "answer": "The location, scope, timing or availability may not match what the customer needs. Review the actual enquiry and landing page before assuming the search itself should be excluded."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Google Ads schedule setup and time zones",
+          "url": "https://support.google.com/google-ads/answer/6372656?hl=en"
+        },
+        {
+          "label": "Google Ads search terms report",
+          "url": "https://support.google.com/google-ads/answer/13738234?hl=en"
+        }
+      ],
+      "related_slugs": [
+        "google-ads-home-services-usa",
+        "service-business-landing-pages",
+        "service-business-leads-not-converting"
+      ],
+      "service_links": [
+        {
+          "label": "Google Ads management",
+          "href": "/services/google-ads"
+        },
+        {
+          "label": "Service business marketing",
+          "href": "/services/service-business-marketing"
+        },
+        {
+          "label": "Marketing for Australia",
+          "href": "/markets/australia"
+        }
+      ]
+    },
+    {
+      "slug": "digital-marketing-service-businesses-india",
+      "title": "Digital Marketing for Service Businesses in India",
+      "description": "Build a practical marketing plan for an Indian service business using real city coverage, supported languages, useful proof and qualified enquiries.",
+      "category": "Digital Marketing",
+      "markets": [
+        "India"
+      ],
+      "published": "2026-11-26",
+      "modified": "2026-11-26",
+      "image": "/assets/blog/digital-marketing-service-businesses-india.webp",
+      "image_alt": "Illustration of a business owner taking a phone call outside a local service storefront",
+      "summary": "A service-led framework for choosing search and social campaigns, preparing a useful local offer and handling calls, forms and WhatsApp conversations with clear next steps",
+      "key_takeaways": [
+        "Start with one clear service offer and the local areas the team can deliver",
+        "Support the advertised language and contact method through to the human reply",
+        "Judge campaigns by suitable enquiries and booked work rather than message volume"
+      ],
+      "body_html": "<p>A service business does not need to reach everyone in India to build a useful marketing program. It needs to reach customers it can serve, explain a relevant offer and handle the resulting enquiries well. For a local company, the first decisions concern city coverage, job types, available staff and the next step a customer can realistically take.</p>\n<p>Use this framework to connect your website, Google Ads, Meta Ads and enquiry handling. The right mix depends on the service and the business's records, rather than a fixed budget split or a promise of cheap leads.</p>\n<h2 id=\"define-one-clear-service-offer\">Define one clear service offer</h2>\n<p>Choose a service that the team understands and can deliver consistently. Describe the customer problem, the work included, the main exclusions and how a quote or appointment is arranged. If several services need different information or different teams, give each a clear path on the website.</p>\n<p>A broad offer such as “all home services” can create difficult enquiries unless the company has the capability to deliver it. A more specific page allows the customer to understand the scope before making contact. Where a price is published, state the currency and the work covered, and explain when an assessment is needed before confirming a final quote.</p>\n<h2 id=\"make-city-coverage-specific\">Make city coverage specific</h2>\n<p>List the localities, sectors, neighbourhoods or nearby towns the team can reach. Identify any areas that need a different appointment arrangement. Ask for enough location information to confirm the job address without forcing the customer through a long form before they understand the offer.</p>\n<p>For an operation that travels to customers, coverage should describe the route it can deliver. For a business that welcomes customers to its premises, explain how visits are arranged. <a href=\"https://support.google.com/business/answer/3038177\">Google's business representation rules</a> require accurate locations; creating a profile for an unstaffed virtual office does not establish a genuine branch.</p>\n<p>Use the same coverage explanation in ads, landing pages and replies. Otherwise, staff may spend time correcting expectations that marketing created.</p>\n<h2 id=\"give-each-channel-a-clear-job\">Give each channel a clear job</h2>\n<p>Think about the decision the customer is making. Someone searching for a named service may need proof that your company covers their area and can handle the task. Someone seeing an unfamiliar offer in a social feed may first need an explanation of the work and why it is relevant.</p>\n<table><thead><tr><th scope=\"col\">Customer situation</th><th scope=\"col\">Useful content</th><th scope=\"col\">Outcome to review</th></tr></thead><tbody><tr><td>Actively looking for a service</td><td>A specific service page with coverage and a clear enquiry route</td><td>Suitable requests and bookings</td></tr><tr><td>Discovering a service through social creative</td><td>A real demonstration, process explanation or relevant project</td><td>Conversations that match the advertised work</td></tr><tr><td>Comparing providers</td><td>Verifiable experience, scope details and the quote process</td><td>Progression to a useful estimate discussion</td></tr></tbody></table>\n<p>These are planning hypotheses. Test them against your own enquiry records instead of assuming a platform always attracts a particular type of customer. Our <a href=\"/blogs/google-ads-vs-meta-ads-service-businesses\">Google Ads and Meta Ads guide</a> explains how to compare the channels around service demand and buying decisions.</p>\n<h2 id=\"match-language-with-real-response-capacity\">Match language with real response capacity</h2>\n<p>Use the language or languages your intended customers can understand and your staff can support. A multilingual advertisement should lead to a page and a conversation that continue the same promise. Ask a fluent person to check service terminology, scope and contact instructions before publishing translated copy.</p>\n<p><a href=\"https://support.google.com/google-ads/answer/1722078?hl=en\">Google's current language guidance</a> explains how ad language and user understanding affect matching. Review the guidance for the campaign type rather than relying on an old setup checklist.</p>\n<p>Keep the offer consistent across languages. If one version promises an immediate visit and another describes an assessment, the issue is an operational mismatch, not simply a translation detail.</p>\n<h2 id=\"choose-contact-methods-you-can-manage\">Choose contact methods you can manage</h2>\n<p>Calls, forms and WhatsApp can each provide a useful starting point when someone owns the reply. <a href=\"https://en-gb.facebook.com/business/learn/video/whatsapp-ads-that-click-to-message\">Meta documents ads that open WhatsApp conversations</a> from Facebook or Instagram. The conversation still needs a practical process for establishing service fit and arranging the next step.</p>\n<p>For a messaging route, prepare a short opening response asking what service is needed, where the work is located and when the customer hopes to proceed. Let staff adapt the conversation instead of repeatedly sending a generic brochure. State when someone will respond and offer an alternative contact route when appropriate.</p>\n<p>Count a chat start separately from a qualified request. Several messages may relate to one customer, and an enquiry that cannot be served should have a clear reason in the record.</p>\n<h2 id=\"make-evidence-specific-to-the-work\">Make evidence specific to the work</h2>\n<p>Show original project photos and explain the task completed, with permission where needed. A useful example can describe the initial request, constraints, process and outcome without inventing a performance percentage. Keep testimonials faithful to what the customer actually said and identify context where it can be shared.</p>\n<p>On the website, explain who operates the business and how a customer can reach the team. If you make a claim about specialist training, equipment or a guarantee, check the supporting details before using it across campaigns. Useful proof answers a buying question rather than adding an impressive but unverifiable badge.</p>\n<h3 id=\"a-hypothetical-cleaning-service-example\">A hypothetical cleaning service example</h3>\n<p>Imagine a cleaning company serving selected localities around Pune. It promotes a specific deep-cleaning service, explains the included work and uses a staffed messaging route to check property size, address and timing. If many conversations concern a service it does not offer, it can review the creative and page scope before increasing spend. This is a hypothetical planning example, not an Iscalify client result.</p>\n<h2 id=\"use-job-outcomes-to-plan-the-next-step\">Use job outcomes to plan the next step</h2>\n<p>Review enquiries reached, requests qualified, estimates sent, bookings and completed work. Record reasons for losses and include available capacity in budget discussions. A low message cost does not establish whether advertising produces suitable work. The <a href=\"/blogs/qualified-leads-customer-acquisition-cost\">qualified lead and acquisition cost guide</a> develops that measurement approach.</p>\n<p>Explore Iscalify's <a href=\"/markets/india\">India market page</a> and <a href=\"/services/service-business-marketing\">service business marketing approach</a>, alongside <a href=\"/services/google-ads\">Google Ads</a> and <a href=\"/services/meta-ads\">Meta Ads management</a>, when building a brief around your service, geography and enquiry process.</p>",
+      "faq": [
+        {
+          "question": "Should a local Indian service business advertise across the country?",
+          "answer": "Only when its delivery model supports that coverage. For a local team, define the cities and localities it can actually serve, including travel limits and appointment arrangements, before expanding advertising."
+        },
+        {
+          "question": "Are WhatsApp conversations the same as qualified leads?",
+          "answer": "No. A conversation is an initial contact. Qualification should establish the requested service, location, timing and whether the customer can take a relevant next step. Keep duplicate messages linked to the same enquiry."
+        },
+        {
+          "question": "Is Google Ads or Meta Ads better for a service business?",
+          "answer": "The answer depends on the service, customer decision and enquiry process. Test clear channel roles and compare suitable requests, bookings and completed work using consistent definitions instead of choosing from message cost alone."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Google guidelines for representing a business",
+          "url": "https://support.google.com/business/answer/3038177"
+        },
+        {
+          "label": "Google Ads language guidance",
+          "url": "https://support.google.com/google-ads/answer/1722078?hl=en"
+        },
+        {
+          "label": "Meta ads that click to WhatsApp",
+          "url": "https://en-gb.facebook.com/business/learn/video/whatsapp-ads-that-click-to-message"
+        }
+      ],
+      "related_slugs": [
+        "google-ads-vs-meta-ads-service-businesses",
+        "qualified-leads-customer-acquisition-cost",
+        "choose-service-business-marketing-agency"
+      ],
+      "service_links": [
+        {
+          "label": "Service business marketing",
+          "href": "/services/service-business-marketing"
+        },
+        {
+          "label": "Google Ads management",
+          "href": "/services/google-ads"
+        },
+        {
+          "label": "Meta Ads management",
+          "href": "/services/meta-ads"
+        },
+        {
+          "label": "Marketing for India",
+          "href": "/markets/india"
+        }
+      ]
+    }
+  ]
+}
