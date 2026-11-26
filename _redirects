@@ -5,8 +5,7 @@ http://iscalify.com/* https://iscalify.com/:splat 301!
 /free-consultation /contact 301!
 /company/ /about 301!
 /company /about 301!
-# Canonicalize old URLs observed in Search Console
-/contact/ /contact 301!
+# Legacy blog archive
 /blog/ /blogs 301!
 
 /about          /about.html         200
@@ -25,6 +24,7 @@ http://iscalify.com/* https://iscalify.com/:splat 301!
 /industries/hvac-google-ads /industries/hvac-google-ads.html 200
 /case-studies   /case-studies.html  200
 /results        /case-studies       301
+/contact/       /contact.html       200
 /contact        /contact.html       200
 /blog.html /blogs 301!
 /blog /blogs 301!
