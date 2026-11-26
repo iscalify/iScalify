@@ -1,5 +1,14 @@
 http://iscalify.com/* https://iscalify.com/:splat 301!
 
+# Legacy WordPress pages with matching destinations
+/free-consultation/ /contact 301!
+/free-consultation /contact 301!
+/company/ /about 301!
+/company /about 301!
+# Canonicalize old URLs observed in Search Console
+/contact/ /contact 301!
+/blog/ /blogs 301!
+
 /about          /about.html         200
 /services       /services.html      200
 /services/meta-ads   /services/meta-ads.html    200
