@@ -266,6 +266,10 @@ button {
   flex-direction: column;
   gap: 4px;
   z-index: 999;
+  max-height: calc(100vh - var(--nav-height));
+  max-height: calc(100dvh - var(--nav-height));
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .mobile-menu.open {

@@ -8,7 +8,10 @@
         content="Contact Iscalify – Book a free 30-minute strategy call with our performance marketing team. Meta Ads, Google Ads, SEO & Web Development agency in Mohali, Punjab.">
       <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#08080e" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico?v=20261126-s" type="image/x-icon" sizes="16x16 32x32 48x48" />
+  <link rel="icon" href="/assets/favicon-96x96.png?v=20261126-s" type="image/png" sizes="96x96" />
+  <link rel="icon" href="/assets/favicon.svg?v=20261126-s" type="image/svg+xml" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261126-s" sizes="180x180" />
   <link rel="canonical" href="https://iscalify.com/contact" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Iscalify" />
@@ -19,9 +22,17 @@
   <meta name="twitter:title" content="Contact – Iscalify | Book Free Strategy Call | Mohali, Punjab" />
   <meta name="twitter:description" content="Contact Iscalify – Book a free 30-minute strategy call with our performance marketing team. Meta Ads, Google Ads, SEO &amp; Web Development agency in Mohali, Punjab." />
 <title>Contact – Iscalify | Book Free Strategy Call | Mohali, Punjab</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261126-content3">
     <style>
         /* Contact-specific overrides */
+        .phone-field-row { display:grid; grid-template-columns: minmax(120px, 0.8fr) minmax(0, 1.5fr); gap: 10px; }
+        .phone-field-row .form-select, .phone-field-row .form-input { min-width:0; width:100%; }
+        .contact-right .form-input::placeholder, .contact-right .form-textarea::placeholder { color: #a2a2b7; opacity: 1; }
+        .contact-right .form-select:invalid { color: #a2a2b7 !important; }
+        .contact-right .form-select option { color: #08080e; background: #fff; }
+        .contact-right .form-input:focus-visible, .contact-right .form-select:focus-visible, .contact-right .form-textarea:focus-visible { outline: 2px solid #b8befe; outline-offset: 2px; }
+        @media (max-width: 390px) { .phone-field-row { grid-template-columns: minmax(100px, 0.75fr) minmax(0, 1.25fr); gap: 8px; } }
+
         .contact-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -199,7 +210,7 @@
         }
     </style>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":"ContactPage","name":"Contact – Iscalify | Book Free Strategy Call | Mohali, Punjab","url":"https://iscalify.com/contact","about":{"@type":"Organization","name":"Iscalify"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How quickly can we start seeing results?","acceptedAnswer":{"@type":"Answer","text":"Most clients see measurable improvement in ROAS or CPL within 30 days. Significant results typically appear within 60–90 days as we gather data, test creatives, and optimise. We set realistic expectations from day one."}},{"@type":"Question","name":"What's your minimum budget requirement?","acceptedAnswer":{"@type":"Answer","text":"For Meta Ads or Google Ads management, we typically recommend a minimum ad spend of ₹30,000–₹50,000/month to get statistically meaningful data. Our management fee is separate and discussed during the strategy call."}},{"@type":"Question","name":"Do you work with businesses outside of Mohali?","acceptedAnswer":{"@type":"Answer","text":"Yes — we work with businesses across India. Our clients are based in Delhi, Mumbai, Bangalore, Pune, and beyond. Digital marketing is location-agnostic and we communicate via WhatsApp, Zoom, and email."}},{"@type":"Question","name":"What makes Iscalify different from other agencies?","acceptedAnswer":{"@type":"Answer","text":"We're obsessed with ROAS, not vanity metrics. No juniors handle your account. You get a senior strategist, real-time dashboard access, and weekly plain-English reports. We measure success the same way you do — revenue."}},{"@type":"Question","name":"What does the free strategy call include?","acceptedAnswer":{"@type":"Answer","text":"A 30-minute 1:1 call where we audit your current marketing setup, identify the biggest opportunities and leaks in your funnel, and give you a clear action plan — whether you hire us or not. No sales pressure, just real strategy."}}]}]}
+  {"@context":"https://schema.org","@graph":[{"@type":"ContactPage","name":"Contact – Iscalify | Book Free Strategy Call | Mohali, Punjab","url":"https://iscalify.com/contact","about":{"@type":"Organization","name":"Iscalify"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How quickly can we start seeing results?","acceptedAnswer":{"@type":"Answer","text":"Timing depends on your service, local demand, existing setup and the pace of testing. We agree practical goals and review periods after assessing your account and customer journey, without promising a fixed performance timeline."}},{"@type":"Question","name":"What's your minimum budget requirement?","acceptedAnswer":{"@type":"Answer","text":"The starting budget depends on your job economics, target market, available capacity and agreed testing scope. Platform ad spend is separate from our management fees, which are confirmed with the service scope."}},{"@type":"Question","name":"Do you work with businesses outside of Mohali?","acceptedAnswer":{"@type":"Answer","text":"Yes. We deliver marketing remotely from Mohali, India, for businesses targeting India, the United States, the United Kingdom, Canada and Australia. We agree meeting times, approvals and communication channels around your operating needs."}},{"@type":"Question","name":"What makes Iscalify different from other agencies?","acceptedAnswer":{"@type":"Answer","text":"We're obsessed with ROAS, not vanity metrics. No juniors handle your account. You get a senior strategist, real-time dashboard access, and weekly plain-English reports. We measure success the same way you do — revenue."}},{"@type":"Question","name":"What does the free strategy call include?","acceptedAnswer":{"@type":"Answer","text":"A 30-minute 1:1 call where we audit your current marketing setup, identify the biggest opportunities and leaks in your funnel, and give you a clear action plan — whether you hire us or not. No sales pressure, just real strategy."}}]}]}
   </script>
 </head>
 
@@ -208,29 +219,29 @@
     <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Iscalify</a>
+      <a href="/" class="nav-logo">Iscalify</a>
       <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="case-studies.html" class="nav-link">Results</a>
-        <a href="blog.html" class="nav-link">Blog</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/services" class="nav-link">Services</a>
+        <a href="/case-studies" class="nav-link">Results</a>
+        <a href="/blogs" class="nav-link">Blogs</a>
+        <a href="/contact" class="nav-link active">Contact</a>
       </div>
       <div class="nav-actions">
-        <a href="contact.html" class="btn-contact">Get In Touch</a>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        <a href="/contact" class="btn-contact">Get In Touch</a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
   </nav>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html" class="mobile-link">Home</a>
-    <a href="about.html" class="mobile-link">About</a>
-    <a href="services.html" class="mobile-link">Services</a>
-    <a href="case-studies.html" class="mobile-link">Results</a>
-    <a href="blog.html" class="mobile-link">Blog</a>
-    <a href="contact.html" class="mobile-link">Contact</a>
-    <a href="contact.html" class="btn-contact" style="margin-top:16px;display:inline-block;text-align:center">Get In
+    <a href="/" class="mobile-link">Home</a>
+    <a href="/about" class="mobile-link">About</a>
+    <a href="/services" class="mobile-link">Services</a>
+    <a href="/case-studies" class="mobile-link">Results</a>
+    <a href="/blogs" class="mobile-link">Blogs</a>
+    <a href="/contact" class="mobile-link">Contact</a>
+    <a href="/contact" class="btn-contact" style="margin-top:16px;display:inline-block;text-align:center">Get In
       Touch</a>
   </div>
 
@@ -240,11 +251,9 @@
             <div class="reveal">
                 <div class="section-overline accent" style="margin-bottom:28px">Free 30-Minute Strategy Call</div>
                 <h1 class="bold-heading" style="color:var(--white);font-size:clamp(4rem,9vw,10rem)">Let's
-                    Grow<br>Your<br><span class="accent">Business.</span></h1>
+                    Grow<br>Your<br><span class="accent">Business</span></h1>
                 <p
-                    style="font-size:1.15rem;color:rgba(255,255,255,0.55);max-width:560px;line-height:1.75;margin-top:32px">
-                    Fill in the form or book directly via Calendly. No sales pitch — just a genuine conversation about
-                    how we can help you scale.</p>
+                    style="font-size:1.15rem;color:rgba(255,255,255,0.55);max-width:560px;line-height:1.75;margin-top:32px">Fill in the form or book directly via Calendly for a genuine conversation about how we can help you scale, with no sales pitch</p>
             </div>
         </div>
     </section>
@@ -288,7 +297,7 @@
                     <div class="info-icon">🕐</div>
                     <div>
                         <div class="info-label">Business Hours</div>
-                        <div class="info-value">Mon–Sat: 9:00 AM – 7:00 PM<br>Response within 2 hours guaranteed</div>
+                        <div class="info-value">Mon–Sat: 9:00 AM – 7:00 PM IST (UTC+5:30)<br>Response within 2 hours guaranteed</div>
                     </div>
                 </div>
 
@@ -325,45 +334,98 @@
                 <form id="contact-form" action="https://formsubmit.co/iscalify@gmail.com" method="POST" style="max-width:560px">
                     <input type="hidden" name="_subject" value="New Lead Submission - Iscalify Website">
                     <input type="hidden" name="_captcha" value="false">
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
                         <div class="form-group">
-                            <label class="form-label dark-label" style="color:var(--grey-400)">Full Name *</label>
-                            <input type="text" name="Name" class="form-input" placeholder="Your name" required
+                            <label for="contact-name" class="form-label dark-label" style="color:var(--grey-400)">Full Name *</label>
+                            <input type="text" id="contact-name" name="Name" autocomplete="name" class="form-input" placeholder="Your name" required
                                 style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                         </div>
                         <div class="form-group">
-                            <label class="form-label dark-label" style="color:var(--grey-400)">Phone Number *</label>
-                            <input type="tel" name="Phone" class="form-input" placeholder="+91 82838 32322" required
-                                style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                            <label for="contact-phone" class="form-label dark-label" style="color:var(--grey-400)">Phone Number *</label>
+                            <div class="phone-field-row">
+                                <select id="contact-dial-code" name="Country Calling Code" class="form-select" aria-label="Country calling code" required
+                                    style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                                    <option value="">Code *</option>
+                                    <option value="+91">🇮🇳 +91 India</option>
+                                    <option value="+1">🇺🇸 +1 US / Canada</option>
+                                    <option value="+44">🇬🇧 +44 UK</option>
+                                    <option value="+61">🇦🇺 +61 Australia</option>
+                                    <option value="+64">🇳🇿 +64 New Zealand</option>
+                                    <option value="+971">🇦🇪 +971 UAE</option>
+                                    <option value="+966">🇸🇦 +966 Saudi Arabia</option>
+                                    <option value="+65">🇸🇬 +65 Singapore</option>
+                                    <option value="+49">🇩🇪 +49 Germany</option>
+                                    <option value="+33">🇫🇷 +33 France</option>
+                                    <option value="+39">🇮🇹 +39 Italy</option>
+                                    <option value="+34">🇪🇸 +34 Spain</option>
+                                    <option value="+31">🇳🇱 +31 Netherlands</option>
+                                    <option value="+41">🇨🇭 +41 Switzerland</option>
+                                    <option value="+353">🇮🇪 +353 Ireland</option>
+                                    <option value="+27">🇿🇦 +27 South Africa</option>
+                                    <option value="+92">🇵🇰 +92 Pakistan</option>
+                                    <option value="+880">🇧🇩 +880 Bangladesh</option>
+                                    <option value="+977">🇳🇵 +977 Nepal</option>
+                                    <option value="+94">🇱🇰 +94 Sri Lanka</option>
+                                    <option value="+60">🇲🇾 +60 Malaysia</option>
+                                    <option value="+63">🇵🇭 +63 Philippines</option>
+                                    <option value="+62">🇮🇩 +62 Indonesia</option>
+                                    <option value="+81">🇯🇵 +81 Japan</option>
+                                    <option value="+82">🇰🇷 +82 South Korea</option>
+                                    <option value="+86">🇨🇳 +86 China</option>
+                                    <option value="+55">🇧🇷 +55 Brazil</option>
+                                    <option value="+52">🇲🇽 +52 Mexico</option>
+                                    <option value="+20">🇪🇬 +20 Egypt</option>
+                                    <option value="other">Other code</option>
+                                </select>
+                                <input type="tel" id="contact-phone" name="Phone Number" autocomplete="tel-national" inputmode="tel" class="form-input" placeholder="Your phone number" minlength="5" maxlength="20" pattern="[0-9() .-]{5,20}" title="Use 5–20 digits and phone separators without the country code" required
+                                    style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                            </div>
+                            <div id="contact-other-code-wrap" style="display:none;margin-top:10px">
+                                <label for="contact-other-code" class="form-label dark-label" style="color:var(--grey-400)">Enter country calling code *</label>
+                                <input type="tel" id="contact-other-code" name="Other Country Calling Code" class="form-input" placeholder="e.g. +234" inputmode="tel" pattern="\+[1-9][0-9]{0,3}" title="Enter a valid calling code starting with +, followed by 1–4 digits"
+                                    style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                            </div>
+                            <input type="hidden" id="contact-full-phone" name="Full Phone Number" value="">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Email Address *</label>
-                        <input type="email" name="Email" class="form-input" placeholder="you@company.com" required
+                        <label for="contact-email" class="form-label dark-label" style="color:var(--grey-400)">Email Address *</label>
+                        <input type="email" id="contact-email" name="Email" autocomplete="email" class="form-input" placeholder="you@company.com" required
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Business Name</label>
-                        <input type="text" name="Business Name" class="form-input" placeholder="Your company name"
+                        <label for="contact-business" class="form-label dark-label" style="color:var(--grey-400)">Business Name *</label>
+                        <input type="text" id="contact-business" name="Business Name" autocomplete="organization" class="form-input" placeholder="Your company name" required
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Monthly Ad Budget</label>
-                        <select name="Monthly Ad Budget" class="form-select"
+                        <label for="contact-website" class="form-label dark-label" style="color:var(--grey-400)">Business Website *</label>
+                        <input type="url" id="contact-website" name="Website" autocomplete="url" class="form-input" placeholder="https://yourcompany.com" required
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
-                            <option value="">Select your budget</option>
-                            <option>Under ₹30,000/month</option>
-                            <option>₹30,000 – ₹1,00,000/month</option>
-                            <option>₹1,00,000 – ₹5,00,000/month</option>
-                            <option>₹5,00,000+/month</option>
-                        </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Service Interested
-                            In</label>
-                        <select name="Service Interested In" class="form-select"
+                        <label for="contact-country" class="form-label dark-label" style="color:var(--grey-400)">Country *</label>
+                        <input type="text" id="contact-country" name="Country" autocomplete="country-name" list="contact-countries" class="form-input" placeholder="Select or type your country" required
+                            style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                        <datalist id="contact-countries">
+                            <option value="India"><option value="United States"><option value="United Kingdom"><option value="Canada"><option value="Australia">
+                            <option value="United Arab Emirates"><option value="Singapore"><option value="New Zealand"><option value="Germany"><option value="France">
+                            <option value="Saudi Arabia"><option value="South Africa"><option value="Ireland"><option value="Netherlands"><option value="Malaysia">
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-budget" class="form-label dark-label" style="color:var(--grey-400)">Monthly Ad Budget and Currency *</label>
+                        <input type="text" id="contact-budget" name="Monthly Ad Budget" class="form-input"
+                            placeholder="e.g. USD 2,000 or INR 50,000" aria-describedby="contact-budget-help" required
+                            style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                        <p id="contact-budget-help" style="font-size:0.78rem;color:var(--grey-400);line-height:1.6;margin-top:8px">Enter your expected monthly advertising budget and currency</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-service" class="form-label dark-label" style="color:var(--grey-400)">Service Interested In *</label>
+                        <select id="contact-service" name="Service Interested In" class="form-select" required
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                             <option value="">Select a service</option>
+                            <option>Service Business Marketing</option>
                             <option>Meta Ads</option>
                             <option>Google Ads</option>
                             <option>SEO</option>
@@ -373,9 +435,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Tell Us About Your
-                            Goals</label>
-                        <textarea name="Goals & Challenges" class="form-textarea"
+                        <label for="contact-goals" class="form-label dark-label" style="color:var(--grey-400)">Tell Us About Your Goals *</label>
+                        <textarea id="contact-goals" name="Goals & Challenges" class="form-textarea" required minlength="10"
                             placeholder="What results are you looking for? What's your biggest marketing challenge right now?"
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white);min-height:120px"></textarea>
                     </div>
@@ -401,29 +462,23 @@
         <div class="container-md">
             <div class="reveal">
                 <div class="section-overline accent" style="margin-bottom:32px">Common Questions</div>
-                <h2 class="bold-heading" style="color:var(--white);margin-bottom:48px">FAQ.</h2>
+                <h2 class="bold-heading" style="color:var(--white);margin-bottom:48px">FAQ</h2>
             </div>
             <div class="reveal" id="faq">
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFaq(this)">How quickly can we start seeing results?
                         <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">Most clients see measurable improvement in ROAS or CPL within 30 days.
-                        Significant results typically appear within 60–90 days as we gather data, test creatives, and
-                        optimise. We set realistic expectations from day one.</div>
+                    <div class="faq-answer">Timing depends on your service, local demand, existing setup and the pace of testing. We agree practical goals and review periods after assessing your account and customer journey, without promising a fixed performance timeline.</div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFaq(this)">What's your minimum budget requirement? <span
                             class="faq-icon">+</span></button>
-                    <div class="faq-answer">For Meta Ads or Google Ads management, we typically recommend a minimum ad
-                        spend of ₹30,000–₹50,000/month to get statistically meaningful data. Our management fee is
-                        separate and discussed during the strategy call.</div>
+                    <div class="faq-answer">The starting budget depends on your job economics, target market, available capacity and agreed testing scope. Platform ad spend is separate from our management fees, which are confirmed with the service scope.</div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFaq(this)">Do you work with businesses outside of
                         Mohali? <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">Yes — we work with businesses across India. Our clients are based in Delhi,
-                        Mumbai, Bangalore, Pune, and beyond. Digital marketing is location-agnostic and we communicate
-                        via WhatsApp, Zoom, and email.</div>
+                    <div class="faq-answer">Yes. We deliver marketing remotely from Mohali, India, for businesses targeting India, the United States, the United Kingdom, Canada and Australia. We agree meeting times, approvals and communication channels around your operating needs.</div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFaq(this)">What makes Iscalify different from other
@@ -447,9 +502,8 @@
     <section class="cta-section">
         <div class="container">
             <div class="reveal">
-                <h2 class="cta-headline">Stop Wasting<br>Ad Budget.<br>Call Us.</h2>
-                <p class="cta-sub">Book your free strategy call today. 30 minutes that could change your business
-                    trajectory.</p>
+                <h2 class="cta-headline">Stop Wasting<br>Ad Budget<br>Call Us</h2>
+                <p class="cta-sub">Book your free strategy call today — 30 minutes that could change your business trajectory</p>
                 <div class="cta-actions">
                     <a href="https://wa.me/message/5R6USAIPGQ3ZG1" target="_blank" class="btn-primary-black">💬 WhatsApp Us
                         Now</a>
@@ -473,20 +527,21 @@
         <div>
           <div class="footer-heading">Services</div>
           <div class="footer-links">
-            <a href="services.html" class="footer-link">Meta Ads</a>
-            <a href="services.html" class="footer-link">Google Ads</a>
-            <a href="services.html" class="footer-link">SEO</a>
-            <a href="services.html" class="footer-link">Web Development</a>
-            <a href="services.html" class="footer-link">Social Media</a>
+            <a href="/services/meta-ads" class="footer-link">Meta Ads</a>
+            <a href="/services/google-ads" class="footer-link">Google Ads</a>
+            <a href="/services/service-business-marketing" class="footer-link">Service Business Marketing</a>
+            <a href="/services#seo" class="footer-link">SEO</a>
+            <a href="/services#web-dev" class="footer-link">Web Development</a>
+            <a href="/services#social-media" class="footer-link">Social Media</a>
           </div>
         </div>
         <div>
           <div class="footer-heading">Company</div>
           <div class="footer-links">
-            <a href="about.html" class="footer-link">About Us</a>
-            <a href="case-studies.html" class="footer-link">Case Studies</a>
-            <a href="blog.html" class="footer-link">Blog</a>
-            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="/about" class="footer-link">About Us</a>
+            <a href="/case-studies" class="footer-link">Case Studies</a>
+            <a href="/blogs" class="footer-link">Blogs</a>
+            <a href="/contact" class="footer-link">Contact</a>
           </div>
         </div>
         <div>
@@ -507,7 +562,7 @@
   </footer>
 
     <a href="https://wa.me/message/5R6USAIPGQ3ZG1" class="whatsapp-float" target="_blank">💬</a>
-    <script src="global.js"></script>
+    <script src="/global.js?v=20261126-content3"></script>
     <script>
         function toggleFaq(btn) {
             const answer = btn.nextElementSibling;
@@ -517,9 +572,23 @@
             document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('open'));
             if (!isOpen) { answer.classList.add('open'); icon.classList.add('open'); }
         }
+        const callingCode = document.getElementById('contact-dial-code');
+        const otherCodeWrap = document.getElementById('contact-other-code-wrap');
+        const otherCodeInput = document.getElementById('contact-other-code');
+        function syncCallingCode() {
+            const isOther = callingCode.value === 'other';
+            otherCodeWrap.style.display = isOther ? 'block' : 'none';
+            otherCodeInput.required = isOther;
+            otherCodeInput.disabled = !isOther;
+            if (!isOther) otherCodeInput.value = '';
+        }
+        callingCode.addEventListener('change', syncCallingCode);
+        syncCallingCode();
         document.getElementById('contact-form')?.addEventListener('submit', async function(e) {
             e.preventDefault();
             const form = e.target;
+            const code = callingCode.value === 'other' ? otherCodeInput.value.trim() : callingCode.value;
+            document.getElementById('contact-full-phone').value = code + ' ' + document.getElementById('contact-phone').value.trim();
             const btn = form.querySelector('button[type="submit"]');
             const originalText = btn.textContent;
             btn.disabled = true;

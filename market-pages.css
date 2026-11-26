@@ -1,0 +1,30 @@
+/* Shared additions for service-business and market pages */
+.service-detail .mp-title { font-size: clamp(3rem, 4.9vw, 5.1rem); overflow-wrap: break-word; }
+.service-detail .mp-prose { max-width: 850px; }
+.service-detail .mp-prose p + p { margin-top: 22px; }
+.service-detail .mp-prose a,
+.service-detail .sd-card p a,
+.service-detail .sd-section-intro a { color: var(--accent-light); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--accent-dark); }
+.service-detail .mp-prose a:hover,
+.service-detail .sd-card p a:hover,
+.service-detail .sd-section-intro a:hover { color: var(--white); }
+.service-detail .mp-market-nav { margin-top: 30px; }
+.service-detail .mp-market-links { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; list-style: none; }
+.service-detail .mp-market-links li { min-width: 0; }
+.service-detail .mp-market-links a,
+.service-detail .mp-market-links li > span { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 74px; height: 100%; padding: 20px; border: 1px solid var(--grey-700); background: var(--surface-2); color: var(--white-soft); font-size: 0.85rem; font-weight: 600; line-height: 1.5; }
+.service-detail .mp-market-links a:hover { border-color: var(--accent); color: var(--accent-light); }
+.service-detail .mp-market-links a span { color: var(--accent); }
+.service-detail .mp-market-links [aria-current="page"] { border-color: var(--accent-dark); color: var(--accent-light); }
+@media (max-width: 1100px) {
+  .service-detail .mp-market-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 800px) {
+  .service-detail .mp-title { max-width: 760px; font-size: clamp(3rem, 7.7vw, 4.8rem); }
+}
+@media (max-width: 600px) {
+  .service-detail .mp-title { font-size: clamp(2.8rem, 11.8vw, 4.2rem); }
+  .service-detail .mp-market-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-detail .mp-market-links a,
+  .service-detail .mp-market-links li > span { min-height: 68px; padding: 16px; font-size: 0.8rem; }
+}
