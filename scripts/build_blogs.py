@@ -96,7 +96,10 @@ def page(title, description, path, body, schema, *, article=None, index=False):
   <meta name="description" content="{e(description)}" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#08080e" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico?v=20261126-s" type="image/x-icon" sizes="16x16 32x32 48x48" />
+  <link rel="icon" href="/assets/favicon-96x96.png?v=20261126-s" type="image/png" sizes="96x96" />
+  <link rel="icon" href="/assets/favicon.svg?v=20261126-s" type="image/svg+xml" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261126-s" sizes="180x180" />
   <link rel="canonical" href="{e(canonical)}" />
   <meta property="og:type" content="{"article" if article else "website"}" />
   <meta property="og:site_name" content="Iscalify" />
