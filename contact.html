@@ -590,6 +590,8 @@
         document.getElementById('contact-form')?.addEventListener('submit', async function(e) {
             e.preventDefault();
             const form = e.target;
+            if (form.dataset.sending === 'true') return;
+            form.dataset.sending = 'true';
             const code = callingCode.value === 'other' ? otherCodeInput.value.trim() : callingCode.value;
             document.getElementById('contact-full-phone').value = code + ' ' + document.getElementById('contact-phone').value.trim();
             const btn = form.querySelector('button[type="submit"]');
@@ -607,6 +609,7 @@
                 if (response.ok) {
                     form.style.display = 'none';
                     document.getElementById('form-success').style.display = 'block';
+                    window.iscalifyTrackLeadEvent?.('generate_lead', { lead_source: 'website_contact_form' });
                 } else {
                     form.submit();
                 }

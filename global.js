@@ -123,3 +123,48 @@ document.querySelectorAll('.stagger-children').forEach(parent => {
   });
 });
 
+
+// Lead-intent instrumentation: no cookies, external tag, PII or network calls.
+// Sends only to an existing consent-aware GA4 gtag or GTM container.
+(function setupLeadAnalytics() {
+  function trackLeadEvent(eventName, attributes) {
+    const safeData = Object.assign({ page_path: window.location.pathname }, attributes || {});
+    // Analytics failures must never interrupt navigation or resubmit a lead form.
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, safeData);
+      } else if (window.google_tag_manager && Array.isArray(window.dataLayer)) {
+        window.dataLayer.push(Object.assign({ event: 'iscalify_' + eventName }, safeData));
+      }
+    } catch (error) {
+      // Tracking is best-effort and must not affect user-facing functionality.
+    }
+  }
+
+  window.iscalifyTrackLeadEvent = trackLeadEvent;
+
+  // Clicks indicate intent; they are not confirmed calls, messages or bookings.
+  document.addEventListener('click', function (event) {
+    const link = event.target && typeof event.target.closest === 'function'
+      ? event.target.closest('a[href]') : null;
+    if (!link) return;
+
+    let url;
+    try {
+      url = new URL(link.getAttribute('href'), window.location.href);
+    } catch (error) {
+      return;
+    }
+
+    const host = url.hostname.toLowerCase();
+    if (url.protocol === 'tel:') {
+      trackLeadEvent('contact_phone_click', { contact_method: 'phone' });
+    } else if (url.protocol === 'mailto:') {
+      trackLeadEvent('contact_email_click', { contact_method: 'email' });
+    } else if (host === 'wa.me' || host === 'whatsapp.com' || host.endsWith('.whatsapp.com')) {
+      trackLeadEvent('contact_whatsapp_click', { contact_method: 'whatsapp' });
+    } else if (host === 'calendly.com' || host === 'www.calendly.com') {
+      trackLeadEvent('appointment_link_click', { booking_platform: 'calendly' });
+    }
+  }, { passive: true });
+})();
