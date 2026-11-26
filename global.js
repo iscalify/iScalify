@@ -15,6 +15,9 @@ hamburger?.addEventListener('click', () => {
   mobileMenu?.classList.toggle('open');
   const spans = hamburger.querySelectorAll('span');
   hamburger.classList.toggle('active');
+  const expanded = hamburger.classList.contains('active');
+  hamburger.setAttribute('aria-expanded', String(expanded));
+  hamburger.setAttribute('aria-label', expanded ? 'Close navigation' : 'Open navigation');
   if (hamburger.classList.contains('active')) {
     spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
     spans[1].style.opacity = '0';
@@ -29,6 +32,8 @@ document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu?.classList.remove('open');
     hamburger?.classList.remove('active');
+    hamburger?.setAttribute('aria-expanded', 'false');
+    hamburger?.setAttribute('aria-label', 'Open navigation');
     if (hamburger) {
       hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
     }
@@ -104,7 +109,8 @@ const counterObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
 
 // ── Smooth scroll for anchor links ───────────────────
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Keep native focus transfer for the service pages' skip-to-content links.
+document.querySelectorAll('a[href^="#"]:not(.sd-skip-link)').forEach(anchor => {
   anchor.addEventListener('click', e => {
     const target = document.querySelector(anchor.getAttribute('href'));
     if (target) {

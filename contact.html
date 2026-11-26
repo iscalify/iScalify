@@ -208,29 +208,29 @@
     <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Iscalify</a>
+      <a href="/" class="nav-logo">Iscalify</a>
       <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="case-studies.html" class="nav-link">Results</a>
-        <a href="blog.html" class="nav-link">Blog</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/services" class="nav-link">Services</a>
+        <a href="/case-studies" class="nav-link">Results</a>
+        <a href="/blog" class="nav-link">Blog</a>
+        <a href="/contact" class="nav-link active">Contact</a>
       </div>
       <div class="nav-actions">
-        <a href="contact.html" class="btn-contact">Get In Touch</a>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        <a href="/contact" class="btn-contact">Get In Touch</a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
   </nav>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html" class="mobile-link">Home</a>
-    <a href="about.html" class="mobile-link">About</a>
-    <a href="services.html" class="mobile-link">Services</a>
-    <a href="case-studies.html" class="mobile-link">Results</a>
-    <a href="blog.html" class="mobile-link">Blog</a>
-    <a href="contact.html" class="mobile-link">Contact</a>
-    <a href="contact.html" class="btn-contact" style="margin-top:16px;display:inline-block;text-align:center">Get In
+    <a href="/" class="mobile-link">Home</a>
+    <a href="/about" class="mobile-link">About</a>
+    <a href="/services" class="mobile-link">Services</a>
+    <a href="/case-studies" class="mobile-link">Results</a>
+    <a href="/blog" class="mobile-link">Blog</a>
+    <a href="/contact" class="mobile-link">Contact</a>
+    <a href="/contact" class="btn-contact" style="margin-top:16px;display:inline-block;text-align:center">Get In
       Touch</a>
   </div>
 
@@ -327,29 +327,29 @@
                     <input type="hidden" name="_captcha" value="false">
                     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
                         <div class="form-group">
-                            <label class="form-label dark-label" style="color:var(--grey-400)">Full Name *</label>
-                            <input type="text" name="Name" class="form-input" placeholder="Your name" required
+                            <label for="contact-name" class="form-label dark-label" style="color:var(--grey-400)">Full Name *</label>
+                            <input type="text" id="contact-name" name="Name" autocomplete="name" class="form-input" placeholder="Your name" required
                                 style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                         </div>
                         <div class="form-group">
-                            <label class="form-label dark-label" style="color:var(--grey-400)">Phone Number *</label>
-                            <input type="tel" name="Phone" class="form-input" placeholder="+91 82838 32322" required
+                            <label for="contact-phone" class="form-label dark-label" style="color:var(--grey-400)">Phone Number *</label>
+                            <input type="tel" id="contact-phone" name="Phone" autocomplete="tel" class="form-input" placeholder="+91 82838 32322" required
                                 style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Email Address *</label>
-                        <input type="email" name="Email" class="form-input" placeholder="you@company.com" required
+                        <label for="contact-email" class="form-label dark-label" style="color:var(--grey-400)">Email Address *</label>
+                        <input type="email" id="contact-email" name="Email" autocomplete="email" class="form-input" placeholder="you@company.com" required
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Business Name</label>
-                        <input type="text" name="Business Name" class="form-input" placeholder="Your company name"
+                        <label for="contact-business" class="form-label dark-label" style="color:var(--grey-400)">Business Name</label>
+                        <input type="text" id="contact-business" name="Business Name" autocomplete="organization" class="form-input" placeholder="Your company name"
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Monthly Ad Budget</label>
-                        <select name="Monthly Ad Budget" class="form-select"
+                        <label for="contact-budget" class="form-label dark-label" style="color:var(--grey-400)">Monthly Ad Budget</label>
+                        <select id="contact-budget" name="Monthly Ad Budget" class="form-select"
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                             <option value="">Select your budget</option>
                             <option>Under ₹30,000/month</option>
@@ -359,9 +359,9 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Service Interested
+                        <label for="contact-service" class="form-label dark-label" style="color:var(--grey-400)">Service Interested
                             In</label>
-                        <select name="Service Interested In" class="form-select"
+                        <select id="contact-service" name="Service Interested In" class="form-select"
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                             <option value="">Select a service</option>
                             <option>Meta Ads</option>
@@ -373,9 +373,9 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-label dark-label" style="color:var(--grey-400)">Tell Us About Your
+                        <label for="contact-goals" class="form-label dark-label" style="color:var(--grey-400)">Tell Us About Your
                             Goals</label>
-                        <textarea name="Goals & Challenges" class="form-textarea"
+                        <textarea id="contact-goals" name="Goals & Challenges" class="form-textarea"
                             placeholder="What results are you looking for? What's your biggest marketing challenge right now?"
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white);min-height:120px"></textarea>
                     </div>
@@ -473,20 +473,20 @@
         <div>
           <div class="footer-heading">Services</div>
           <div class="footer-links">
-            <a href="services.html" class="footer-link">Meta Ads</a>
-            <a href="services.html" class="footer-link">Google Ads</a>
-            <a href="services.html" class="footer-link">SEO</a>
-            <a href="services.html" class="footer-link">Web Development</a>
-            <a href="services.html" class="footer-link">Social Media</a>
+            <a href="/services/meta-ads" class="footer-link">Meta Ads</a>
+            <a href="/services/google-ads" class="footer-link">Google Ads</a>
+            <a href="/services#seo" class="footer-link">SEO</a>
+            <a href="/services#web-dev" class="footer-link">Web Development</a>
+            <a href="/services#social-media" class="footer-link">Social Media</a>
           </div>
         </div>
         <div>
           <div class="footer-heading">Company</div>
           <div class="footer-links">
-            <a href="about.html" class="footer-link">About Us</a>
-            <a href="case-studies.html" class="footer-link">Case Studies</a>
-            <a href="blog.html" class="footer-link">Blog</a>
-            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="/about" class="footer-link">About Us</a>
+            <a href="/case-studies" class="footer-link">Case Studies</a>
+            <a href="/blog" class="footer-link">Blog</a>
+            <a href="/contact" class="footer-link">Contact</a>
           </div>
         </div>
         <div>
@@ -507,7 +507,7 @@
   </footer>
 
     <a href="https://wa.me/message/5R6USAIPGQ3ZG1" class="whatsapp-float" target="_blank">💬</a>
-    <script src="global.js"></script>
+    <script src="/global.js?v=20261126-seo"></script>
     <script>
         function toggleFaq(btn) {
             const answer = btn.nextElementSibling;
