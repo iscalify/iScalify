@@ -10,6 +10,10 @@ http://iscalify.com/* https://iscalify.com/:splat 301!
 /markets/canada /markets/canada.html 200
 /markets/australia /markets/australia.html 200
 /markets/india /markets/india.html 200
+/services/d2c-meta-ads /services/d2c-meta-ads.html 200
+/services/service-business-lead-generation /services/service-business-lead-generation.html 200
+/services/ecommerce-performance-marketing /services/ecommerce-performance-marketing.html 200
+/industries/hvac-google-ads /industries/hvac-google-ads.html 200
 /case-studies   /case-studies.html  200
 /results        /case-studies       301
 /contact        /contact.html       200
