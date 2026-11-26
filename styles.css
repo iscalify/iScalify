@@ -1419,7 +1419,7 @@ footer {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--grey-600);
+  color: var(--grey-200);
   margin-bottom: 24px;
 }
 
@@ -1449,7 +1449,7 @@ footer {
 
 .footer-copy {
   font-size: 0.78rem;
-  color: var(--grey-600);
+  color: var(--grey-200);
 }
 
 .social-links {
