@@ -16,7 +16,8 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://iscalify.com"
-VERSION = "20261126-content2"
+VERSION = "20261126-content3"
+ARROW = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10" /></svg>'
 ARTICLE_FILES = ("blogs-markets.json", "blogs-growth.json", "blogs-existing.json")
 FEATURED = "google-ads-vs-meta-ads-service-businesses"
 LANGUAGES = {"United States": "en-US", "United Kingdom": "en-GB", "Canada": "en-CA", "Australia": "en-AU", "India": "en-IN"}
@@ -140,7 +141,7 @@ def card(article, *, filterable=False):
           <h3><a href="{url}">{e(article["title"])}</a></h3>
           <p>{e(no_terminal_stop(article["summary"]))}</p>
           <div class="journal-card-meta"><time datetime="{article["modified"]}">{human_date(article["modified"])}</time> · {read_minutes(article)} min read</div>
-          <a class="journal-button" href="{url}" aria-label="Read guide: {e(article["title"])}">Read guide <span aria-hidden="true">↗</span></a>
+          <a class="journal-button" href="{url}" aria-label="Read guide: {e(article["title"])}">Read guide {ARROW}</a>
         </div>
       </article>'''
 
@@ -154,7 +155,7 @@ def render_index():
       <div class="container">
         <p class="journal-overline">Ideas for your next stage of growth</p>
         <div class="journal-hero-row">
-          <h1 class="journal-title">Blogs<span aria-hidden="true">↗</span></h1>
+          <h1 class="journal-title">Blogs</h1>
           <p class="journal-deck">Practical guides to paid advertising, local visibility and better enquiries for service businesses in the US, UK, Canada, Australia and India</p>
         </div>
       </div>
@@ -167,7 +168,7 @@ def render_index():
             <div class="journal-card-category">Featured guide · Channel strategy</div>
             <h2 id="featured-heading">{e(featured["title"])}</h2>
             <p>{e(no_terminal_stop(featured["summary"]))}</p>
-            <a class="journal-button" href="/blogs/{FEATURED}">Read the guide <span aria-hidden="true">↗</span></a>
+            <a class="journal-button" href="/blogs/{FEATURED}">Read the guide {ARROW}</a>
           </div>
         </div>
       </div>
@@ -186,7 +187,7 @@ def render_index():
     <section class="journal-section" aria-labelledby="work-together-heading">
       <div class="container"><div class="journal-contact">
         <div><h2 class="journal-section-title" id="work-together-heading">Turn a useful idea<br><span>into a clear plan</span></h2><p>Tell us about your service, market and current enquiries so we can discuss the next practical step</p></div>
-        <div class="journal-actions"><a href="/contact" class="journal-button">Book a strategy call <span aria-hidden="true">↗</span></a><a href="/services/service-business-marketing" class="journal-button journal-button-secondary">Explore service business marketing</a></div>
+        <div class="journal-actions"><a href="/contact" class="journal-button">Book a strategy call {ARROW}</a><a href="/services/service-business-marketing" class="journal-button journal-button-secondary">Explore service business marketing</a></div>
       </div></div>
     </section>'''
     schema = {"@context": "https://schema.org", "@graph": [
@@ -246,7 +247,7 @@ def render_article(article):
         <div class="container journal-article-layout">
           <aside class="journal-sidebar">
             <nav class="journal-toc" aria-labelledby="toc-heading"><h2 id="toc-heading">In this guide</h2><ol>{toc}</ol></nav>
-            <div class="journal-sidebar-cta"><h2>Make the next move clearer</h2><p>Discuss your service, market and current marketing setup</p><a class="journal-button" href="/contact">Talk to Iscalify <span aria-hidden="true">↗</span></a></div>
+            <div class="journal-sidebar-cta"><h2>Make the next move clearer</h2><p>Discuss your service, market and current marketing setup</p><a class="journal-button" href="/contact">Talk to Iscalify {ARROW}</a></div>
           </aside>
           <div class="journal-prose">
             <section class="journal-takeaways" aria-labelledby="key-takeaways"><h2 id="key-takeaways">Key takeaways</h2><ul>{takeaways}</ul></section>
@@ -258,7 +259,7 @@ def render_article(article):
             <h2 id="sources">Sources and further reading</h2>
             <ul class="journal-sources">{sources}</ul>
             <p class="journal-editorial-note">Examples and planning frameworks are illustrative. Use your own customer and cost data when making decisions, and check the linked platform documentation as features change.</p>
-            <section class="journal-article-cta" aria-labelledby="article-cta"><h2 id="article-cta">Plan your next practical step</h2><p>Share your website, services and target market with the Iscalify team</p><div class="journal-actions"><a href="/contact" class="journal-button">Book a strategy call <span aria-hidden="true">↗</span></a><a href="/blogs" class="journal-button journal-button-secondary">Browse all Blogs</a></div></section>
+            <section class="journal-article-cta" aria-labelledby="article-cta"><h2 id="article-cta">Plan your next practical step</h2><p>Share your website, services and target market with the Iscalify team</p><div class="journal-actions"><a href="/contact" class="journal-button">Book a strategy call {ARROW}</a><a href="/blogs" class="journal-button journal-button-secondary">Browse all Blogs</a></div></section>
           </div>
         </div>
       </section>
