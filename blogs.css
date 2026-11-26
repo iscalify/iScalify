@@ -27,13 +27,8 @@
 .journal a.journal-button.journal-button-secondary { background: transparent; border-color: var(--grey-400); color: var(--white); }
 .journal a.journal-button.journal-button-secondary:hover { background: var(--accent); color: var(--black); border-color: var(--accent); }
 .journal .journal-toolbar { display: flex; gap: 24px; justify-content: space-between; align-items: end; margin-bottom: 26px; }
-.journal .journal-controls { margin: 28px 0; display: flex; gap: 18px 28px; align-items: end; justify-content: space-between; flex-wrap: wrap; }
-.journal .journal-filter-label, .journal .journal-search label { display: block; margin-bottom: 10px; color: var(--grey-200); font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-.journal .journal-filters { display: flex; flex-wrap: wrap; gap: 9px; }
-.journal .journal-filter { border: 1px solid var(--grey-700); padding: 10px 16px; color: var(--white-soft); background: var(--surface); font-size: .82rem; font-weight: 600; min-height: 44px; }
-.journal .journal-filter:hover { border-color: var(--accent); color: var(--accent-light); }
-.journal .journal-filter[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--black); }
-.journal .journal-search { flex: 0 1 260px; }
+.journal .journal-controls { margin: 28px 0; max-width: 380px; }
+.journal .journal-search label { display: block; margin-bottom: 10px; color: var(--grey-200); font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
 .journal .journal-search input { display: block; width: 100%; min-height: 44px; padding: 10px 14px; border: 1px solid var(--grey-700); background: var(--surface); color: var(--white); font: inherit; font-size: .86rem; border-radius: 0; }
 .journal .journal-search input::placeholder { color: #9d9db1; }
 .journal .journal-count { color: var(--grey-200); font-size: .82rem; white-space: nowrap; }
@@ -134,9 +129,6 @@
   .journal .journal-feature-content, .journal .journal-card-content { padding: 25px; }
   .journal .journal-toolbar { align-items: start; gap: 15px; }
   .journal .journal-count { white-space: normal; text-align: right; }
-  .journal .journal-controls { display: block; }
-  .journal .journal-search { margin-top: 22px; }
-  .journal .journal-filter { padding: 10px 13px; }
   .journal .journal-article-title { font-size: clamp(2.5rem, 10.7vw, 3.7rem); }
   .journal .journal-deck, .journal .journal-article-deck { font-size: .97rem; }
   .journal .journal-article-meta { font-size: .74rem; }

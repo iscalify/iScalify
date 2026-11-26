@@ -16,7 +16,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://iscalify.com"
-VERSION = "20261126-content4"
+VERSION = "20261126-content5"
 ARROW = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10" /></svg>'
 ARTICLE_FILES = ("blogs-markets.json", "blogs-growth.json", "blogs-existing.json")
 FEATURED = "google-ads-vs-meta-ads-service-businesses"
@@ -133,7 +133,7 @@ def page(title, description, path, body, schema, *, article=None, index=False):
 def card(article, *, filterable=False):
     url = "/blogs/" + article["slug"]
     market = "All markets" if article["markets"] == ["International"] else " · ".join(article["markets"])
-    filtering = f' data-article-card data-markets="{e("|".join(article["markets"]))}"' if filterable else ""
+    filtering = ' data-article-card' if filterable else ""
     return f'''<article class="journal-card"{filtering}>
         <a class="journal-card-media" href="{url}" aria-label="Read {e(article["title"])}">{image_html(article)}</a>
         <div class="journal-card-content">
@@ -148,8 +148,6 @@ def card(article, *, filterable=False):
 
 def render_index():
     featured = ARTICLES_BY_SLUG[FEATURED]
-    filters = [("all", "All guides"), ("United States", "US"), ("United Kingdom", "UK"), ("Canada", "Canada"), ("Australia", "Australia"), ("India", "India")]
-    buttons = "\n".join(f'<button type="button" class="journal-filter" data-market-filter="{market}" aria-pressed="{str(market == "all").lower()}">{label}</button>' for market, label in filters)
     cards = "\n".join(card(article, filterable=True) for article in ARTICLES)
     body = f'''    <header class="journal-hero">
       <div class="container">
@@ -177,11 +175,10 @@ def render_index():
       <div class="container">
         <div class="journal-toolbar"><h2 class="journal-section-title" id="guides-heading">Find your<br><span>next useful read</span></h2><p class="journal-count" id="journal-result-count" role="status" aria-live="polite" aria-atomic="true">{len(ARTICLES)} guides</p></div>
         <div class="journal-controls" id="journal-controls" hidden>
-          <div><span class="journal-filter-label" id="market-filter-label">Choose your market</span><div class="journal-filters" role="group" aria-labelledby="market-filter-label">{buttons}</div></div>
           <div class="journal-search"><label for="journal-search">Search the guides</label><input type="search" id="journal-search" placeholder="Try Google Ads or lead quality" autocomplete="off" aria-controls="journal-grid" /></div>
         </div>
         <div class="journal-grid" id="journal-grid">{cards}</div>
-        <p class="journal-empty" id="journal-empty" hidden>No guides match that search — try another phrase or choose All guides</p>
+        <p class="journal-empty" id="journal-empty" hidden>No guides match that search — try another phrase or clear your search</p>
       </div>
     </section>
     <section class="journal-section" aria-labelledby="work-together-heading">
