@@ -59,21 +59,14 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
 
-// Immediately check all elements — if already in viewport, show right away
+// Observe reveal elements without synchronous geometry reads.
+// IntersectionObserver also handles elements initially in the viewport.
 function initReveal() {
   document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
-    const rect = el.getBoundingClientRect();
-    const inView = rect.top < window.innerHeight && rect.bottom > 0;
-    if (inView) {
-      // Add a tiny delay for above-fold items so they animate in on load
-      requestAnimationFrame(() => el.classList.add('visible'));
-    } else {
-      revealObserver.observe(el);
-    }
+    if (!el.classList.contains('visible')) revealObserver.observe(el);
   });
 }
 
-// Run immediately and also after a short delay to catch lazy-loaded elements
 initReveal();
 setTimeout(initReveal, 100);
 
@@ -126,13 +119,7 @@ document.querySelectorAll('.stagger-children').forEach(parent => {
   Array.from(children).forEach((child, i) => {
     child.style.transitionDelay = `${i * 0.08}s`;
     child.classList.add('reveal');
-    const rect = child.getBoundingClientRect();
-    const inView = rect.top < window.innerHeight && rect.bottom > 0;
-    if (inView) {
-      requestAnimationFrame(() => child.classList.add('visible'));
-    } else {
-      revealObserver.observe(child);
-    }
+    revealObserver.observe(child);
   });
 });
 
