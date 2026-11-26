@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128">
-  <title>Iscalify</title>
-  <rect width="128" height="128" fill="#b8befe"/>
-  <path d="M45 28H87L92 33V43H54V51L92 69V91L83 100H45L36 91V85H74V77L36 59V37Z" fill="#08080e"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128"><title>Iscalify IS</title><rect width="128" height="128" rx="15" fill="#08080e"/><path fill="#b8befe" d="M20,38 L19,49 L20,50 L21,50 L28,50 L28,80 L21,81 L20,81 L19,93 L20,94 L21,94 L96,94 L99,94 L102,92 L105,89 L106,87 L108,84 L108,81 L108,71 L108,68 L106,65 L105,63 L103,61 L100,59 L97,58 L71,58 L70,58 L69,57 L69,52 L70,51 L71,50 L104,50 L105,50 L106,49 L106,39 L105,38 L105,37 L103,37 L67,37 L64,38 L60,40 L57,43 L56,47 L55,50 L55,61 L56,65 L58,67 L62,70 L64,71 L67,72 L92,72 L93,73 L93,74 L93,79 L92,80 L91,81 L45,81 L44,50 L52,50 L53,49 L53,38 L53,38 L52,37 L21,37Z"/></svg>
