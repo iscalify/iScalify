@@ -25,6 +25,14 @@
     <link rel="stylesheet" href="styles.css?v=20261126-content3">
     <style>
         /* Contact-specific overrides */
+        .phone-field-row { display:grid; grid-template-columns: minmax(120px, 0.8fr) minmax(0, 1.5fr); gap: 10px; }
+        .phone-field-row .form-select, .phone-field-row .form-input { min-width:0; width:100%; }
+        .contact-right .form-input::placeholder, .contact-right .form-textarea::placeholder { color: #a2a2b7; opacity: 1; }
+        .contact-right .form-select:invalid { color: #a2a2b7 !important; }
+        .contact-right .form-select option { color: #08080e; background: #fff; }
+        .contact-right .form-input:focus-visible, .contact-right .form-select:focus-visible, .contact-right .form-textarea:focus-visible { outline: 2px solid #b8befe; outline-offset: 2px; }
+        @media (max-width: 390px) { .phone-field-row { grid-template-columns: minmax(100px, 0.75fr) minmax(0, 1.25fr); gap: 8px; } }
+
         .contact-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -326,7 +334,7 @@
                 <form id="contact-form" action="https://formsubmit.co/iscalify@gmail.com" method="POST" style="max-width:560px">
                     <input type="hidden" name="_subject" value="New Lead Submission - Iscalify Website">
                     <input type="hidden" name="_captcha" value="false">
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
                         <div class="form-group">
                             <label for="contact-name" class="form-label dark-label" style="color:var(--grey-400)">Full Name *</label>
                             <input type="text" id="contact-name" name="Name" autocomplete="name" class="form-input" placeholder="Your name" required
@@ -334,8 +342,50 @@
                         </div>
                         <div class="form-group">
                             <label for="contact-phone" class="form-label dark-label" style="color:var(--grey-400)">Phone Number *</label>
-                            <input type="tel" id="contact-phone" name="Phone" autocomplete="tel" class="form-input" placeholder="Include your country code" required
-                                style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                            <div class="phone-field-row">
+                                <select id="contact-dial-code" name="Country Calling Code" class="form-select" aria-label="Country calling code" required
+                                    style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                                    <option value="">Code *</option>
+                                    <option value="+91">🇮🇳 +91 India</option>
+                                    <option value="+1">🇺🇸 +1 US / Canada</option>
+                                    <option value="+44">🇬🇧 +44 UK</option>
+                                    <option value="+61">🇦🇺 +61 Australia</option>
+                                    <option value="+64">🇳🇿 +64 New Zealand</option>
+                                    <option value="+971">🇦🇪 +971 UAE</option>
+                                    <option value="+966">🇸🇦 +966 Saudi Arabia</option>
+                                    <option value="+65">🇸🇬 +65 Singapore</option>
+                                    <option value="+49">🇩🇪 +49 Germany</option>
+                                    <option value="+33">🇫🇷 +33 France</option>
+                                    <option value="+39">🇮🇹 +39 Italy</option>
+                                    <option value="+34">🇪🇸 +34 Spain</option>
+                                    <option value="+31">🇳🇱 +31 Netherlands</option>
+                                    <option value="+41">🇨🇭 +41 Switzerland</option>
+                                    <option value="+353">🇮🇪 +353 Ireland</option>
+                                    <option value="+27">🇿🇦 +27 South Africa</option>
+                                    <option value="+92">🇵🇰 +92 Pakistan</option>
+                                    <option value="+880">🇧🇩 +880 Bangladesh</option>
+                                    <option value="+977">🇳🇵 +977 Nepal</option>
+                                    <option value="+94">🇱🇰 +94 Sri Lanka</option>
+                                    <option value="+60">🇲🇾 +60 Malaysia</option>
+                                    <option value="+63">🇵🇭 +63 Philippines</option>
+                                    <option value="+62">🇮🇩 +62 Indonesia</option>
+                                    <option value="+81">🇯🇵 +81 Japan</option>
+                                    <option value="+82">🇰🇷 +82 South Korea</option>
+                                    <option value="+86">🇨🇳 +86 China</option>
+                                    <option value="+55">🇧🇷 +55 Brazil</option>
+                                    <option value="+52">🇲🇽 +52 Mexico</option>
+                                    <option value="+20">🇪🇬 +20 Egypt</option>
+                                    <option value="other">Other code</option>
+                                </select>
+                                <input type="tel" id="contact-phone" name="Phone Number" autocomplete="tel-national" inputmode="tel" class="form-input" placeholder="Your phone number" minlength="5" maxlength="20" pattern="[0-9() .-]{5,20}" title="Use 5–20 digits and phone separators without the country code" required
+                                    style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                            </div>
+                            <div id="contact-other-code-wrap" style="display:none;margin-top:10px">
+                                <label for="contact-other-code" class="form-label dark-label" style="color:var(--grey-400)">Enter country calling code *</label>
+                                <input type="tel" id="contact-other-code" name="Other Country Calling Code" class="form-input" placeholder="e.g. +234" inputmode="tel" pattern="\+[1-9][0-9]{0,3}" title="Enter a valid calling code starting with +, followed by 1–4 digits"
+                                    style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                            </div>
+                            <input type="hidden" id="contact-full-phone" name="Full Phone Number" value="">
                         </div>
                     </div>
                     <div class="form-group">
@@ -344,34 +394,35 @@
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                     </div>
                     <div class="form-group">
-                        <label for="contact-business" class="form-label dark-label" style="color:var(--grey-400)">Business Name</label>
-                        <input type="text" id="contact-business" name="Business Name" autocomplete="organization" class="form-input" placeholder="Your company name"
+                        <label for="contact-business" class="form-label dark-label" style="color:var(--grey-400)">Business Name *</label>
+                        <input type="text" id="contact-business" name="Business Name" autocomplete="organization" class="form-input" placeholder="Your company name" required
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                     </div>
                     <div class="form-group">
-                        <label for="contact-market" class="form-label dark-label" style="color:var(--grey-400)">Primary market (optional)</label>
-                        <select id="contact-market" name="Primary Market" class="form-select"
+                        <label for="contact-website" class="form-label dark-label" style="color:var(--grey-400)">Business Website *</label>
+                        <input type="url" id="contact-website" name="Website" autocomplete="url" class="form-input" placeholder="https://yourcompany.com" required
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
-                            <option value="">Select your primary market</option>
-                            <option>United States</option>
-                            <option>United Kingdom</option>
-                            <option>Canada</option>
-                            <option>Australia</option>
-                            <option>India</option>
-                            <option>Other</option>
-                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="contact-budget" class="form-label dark-label" style="color:var(--grey-400)">Monthly ad budget and currency</label>
+                        <label for="contact-country" class="form-label dark-label" style="color:var(--grey-400)">Country *</label>
+                        <input type="text" id="contact-country" name="Country" autocomplete="country-name" list="contact-countries" class="form-input" placeholder="Select or type your country" required
+                            style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
+                        <datalist id="contact-countries">
+                            <option value="India"><option value="United States"><option value="United Kingdom"><option value="Canada"><option value="Australia">
+                            <option value="United Arab Emirates"><option value="Singapore"><option value="New Zealand"><option value="Germany"><option value="France">
+                            <option value="Saudi Arabia"><option value="South Africa"><option value="Ireland"><option value="Netherlands"><option value="Malaysia">
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-budget" class="form-label dark-label" style="color:var(--grey-400)">Monthly Ad Budget and Currency *</label>
                         <input type="text" id="contact-budget" name="Monthly Ad Budget" class="form-input"
-                            placeholder="e.g. USD 2,000 or INR 50,000" aria-describedby="contact-budget-help"
+                            placeholder="e.g. USD 2,000 or INR 50,000" aria-describedby="contact-budget-help" required
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
-                        <p id="contact-budget-help" style="font-size:0.78rem;color:var(--grey-400);line-height:1.6;margin-top:8px">Optional — leave blank if you are not sure yet</p>
+                        <p id="contact-budget-help" style="font-size:0.78rem;color:var(--grey-400);line-height:1.6;margin-top:8px">Enter your expected monthly advertising budget and currency</p>
                     </div>
                     <div class="form-group">
-                        <label for="contact-service" class="form-label dark-label" style="color:var(--grey-400)">Service Interested
-                            In</label>
-                        <select id="contact-service" name="Service Interested In" class="form-select"
+                        <label for="contact-service" class="form-label dark-label" style="color:var(--grey-400)">Service Interested In *</label>
+                        <select id="contact-service" name="Service Interested In" class="form-select" required
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white)">
                             <option value="">Select a service</option>
                             <option>Service Business Marketing</option>
@@ -384,9 +435,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="contact-goals" class="form-label dark-label" style="color:var(--grey-400)">Tell Us About Your
-                            Goals</label>
-                        <textarea id="contact-goals" name="Goals & Challenges" class="form-textarea"
+                        <label for="contact-goals" class="form-label dark-label" style="color:var(--grey-400)">Tell Us About Your Goals *</label>
+                        <textarea id="contact-goals" name="Goals & Challenges" class="form-textarea" required minlength="10"
                             placeholder="What results are you looking for? What's your biggest marketing challenge right now?"
                             style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--white);min-height:120px"></textarea>
                     </div>
@@ -522,9 +572,23 @@
             document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('open'));
             if (!isOpen) { answer.classList.add('open'); icon.classList.add('open'); }
         }
+        const callingCode = document.getElementById('contact-dial-code');
+        const otherCodeWrap = document.getElementById('contact-other-code-wrap');
+        const otherCodeInput = document.getElementById('contact-other-code');
+        function syncCallingCode() {
+            const isOther = callingCode.value === 'other';
+            otherCodeWrap.style.display = isOther ? 'block' : 'none';
+            otherCodeInput.required = isOther;
+            otherCodeInput.disabled = !isOther;
+            if (!isOther) otherCodeInput.value = '';
+        }
+        callingCode.addEventListener('change', syncCallingCode);
+        syncCallingCode();
         document.getElementById('contact-form')?.addEventListener('submit', async function(e) {
             e.preventDefault();
             const form = e.target;
+            const code = callingCode.value === 'other' ? otherCodeInput.value.trim() : callingCode.value;
+            document.getElementById('contact-full-phone').value = code + ' ' + document.getElementById('contact-phone').value.trim();
             const btn = form.querySelector('button[type="submit"]');
             const originalText = btn.textContent;
             btn.disabled = true;
